@@ -1,3 +1,3 @@
 <li>
-    <a href="?id=<?=$id;?>"><?=$category['title'];?></a>
+    <a href="category/<?=$category['alias'];?>"><?=$category['title'];?></a>
 </li>
