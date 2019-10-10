@@ -13,8 +13,9 @@ class Menu{
     protected $menuHtml;
     protected $tpl;
     public $tpl2;
+    public $tpl3;
     protected $container = 'ul';
-    protected $class = 'sm sm-vertical sm-mint';
+    protected $class = 'nav';
     protected $table = 'category';
     protected $cache = 3600;
     protected $cacheKey = 'ishop_menu';
@@ -87,10 +88,17 @@ class Menu{
         return $str;
     }
 
-    protected function getMenuHtml2($tree, $tab = ''){
+    protected function getMenuHtml_second($tree, $tab = ''){
         $str = '';
         foreach($tree as $id => $category){
             $str .= $this->catToTemplate2($category, $tab, $id);
+        }
+        return $str;
+    }
+    protected function getMenuHtml_third($tree, $tab = ''){
+        $str = '';
+        foreach($tree as $id => $category){
+            $str .= $this->catToTemplate3($category, $tab, $id);
         }
         return $str;
     }
@@ -103,6 +111,11 @@ class Menu{
     protected function catToTemplate2($category, $tab, $id){
         ob_start();
         require $this->tpl2;
+        return ob_get_clean();
+    }
+    protected function catToTemplate3($category, $tab, $id){
+        ob_start();
+        require $this->tpl3;
         return ob_get_clean();
     }
 

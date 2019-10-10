@@ -302,14 +302,16 @@
                 <div class="side-menu animate-dropdown">
                     <div class="head"><i class="fa fa-list"></i>Категории:</div>
 
-
+                            <nav class="yamm megamenu-horizontal" role="navigation">
                     <?php new \app\widgets\menu\Menu([
-                        'tpl' => WWW . '/menu_tpl/menu.php',
-//                        'tpl2' => WWW . '/menu/menu2.php',
-                        'attrs' => ['id' =>'main-menu'],
+                        'tpl' => WWW . '/menu/menu.php',
+                     'tpl2' => WWW . '/menu/menu2.php',
+                        'tpl3' => WWW . '/menu/menu3.php',
+
+//                        'attrs' => ['role'=>'navigation'],
 
                     ]); ?>
-
+                            </nav>
 
                 </div><!-- /.side-menu -->
                 <!-- ================================== TOP NAVIGATION : END ================================== -->
@@ -1690,11 +1692,11 @@
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/buttons.js"></script>
 <script src="assets/js/scripts.js"></script>
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/jquery.smartmenus.js" type="text/javascript"></script>
-
-<script>$(function() {
-        $('#main-menu').smartmenus();
-    });</script>
+<!--<script src="js/jquery-1.11.0.min.js"></script>-->
+<!--<script src="js/jquery.smartmenus.js" type="text/javascript"></script>-->
+<!---->
+<!--<script>$(function() {-->
+<!--        $('#main-menu').smartmenus();-->
+<!--    });</script>-->
 </body>
 </html>

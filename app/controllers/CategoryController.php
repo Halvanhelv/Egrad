@@ -8,7 +8,7 @@ use app\widgets\filter\Filter;
 use ishop\App;
 use ishop\libs\Pagination;
 
-class CategoryController extends AppController {
+class   CategoryController extends AppController {
 
     public function viewAction(){
         $alias = $this->route['alias'];
