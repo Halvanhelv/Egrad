@@ -28,7 +28,7 @@ class ProductController extends AppController {
         $r_viewed = $p_model->getRecentlyViewed();
         $recentlyViewed = null;
         if($r_viewed){
-            $recentlyViewed = \R::find('product', 'id IN (' . \R::genSlots($r_viewed) . ') LIMIT 3', $r_viewed);
+            $recentlyViewed = \R::find('product', 'id IN (' . \R::genSlots($r_viewed) . ')  LIMIT 3', $r_viewed);
         }
 
         // галерея

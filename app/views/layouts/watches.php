@@ -125,7 +125,7 @@
             <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
                 <!-- ============================================================= LOGO ============================================================= -->
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="<?=PATH;?>">
                         <!--<img alt="logo" src="assets/images/logo.svg" width="233" height="54"/>-->
                         <!--<object id="sp" type="image/svg+xml" data="assets/images/logo.svg" width="233" height="54"></object>-->
                         <svg width="233px" height="54px" viewBox="0 0 233 54" version="1.1" xmlns="http://www.w3.org/2000/svg">

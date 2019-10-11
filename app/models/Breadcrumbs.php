@@ -16,7 +16,7 @@ class Breadcrumbs{
             }
         }
         if($name){
-            $breadcrumbs .= "<li>$name</li>";
+            $breadcrumbs .= "<li class='breadcrumb-item current'><a href='" . PATH . "/category/{$alias}/{$name}'>$name</a></li>";
         }
         return $breadcrumbs;
     }
