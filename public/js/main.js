@@ -34,32 +34,7 @@ $('body').on('change', '.w_sidebar input', function(){
     }
 });
 
-/* Search */
-var products = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    remote: {
-        wildcard: '%QUERY',
-        url: path + '/search/typeahead?query=%QUERY'
-    }
-});
 
-products.initialize();
-
-$("#typeahead").typeahead({
-    // hint: false,
-    highlight: true
-},{
-    name: 'products',
-    display: 'title',
-    limit: 10,
-    source: products
-});
-
-$('#typeahead').bind('typeahead:select', function(ev, suggestion) {
-    // console.log(suggestion);
-    window.location = path + '/search/?s=' + encodeURIComponent(suggestion.title);
-});
 
 /*Cart*/
 $('body').on('click', '.add-to-cart-link', function(e){
@@ -96,17 +71,13 @@ $('#cart .modal-body').on('click', '.del-item', function(){
 });
 
 function showCart(cart){
-    if($.trim(cart) == '<h3>Корзина пуста</h3>'){
-        $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display', 'none');
+
+    $('#main_cart .dropdown-menu').html(cart);
+
+    if($('.total_price').text()){
+        $('.cart_price').html($('.top-cart-row .total_price').text());
     }else{
-        $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display', 'inline-block');
-    }
-    $('#cart .modal-body').html(cart);
-    $('#cart').modal();
-    if($('.cart-sum').text()){
-        $('.simpleCart_total').html($('#cart .cart-sum').text());
-    }else{
-        $('.simpleCart_total').text('Empty Cart');
+        $('.cart_price').text('Пусто');
     }
 }
 
@@ -151,4 +122,32 @@ $('.available select').on('change', function(){
     }else{
         $('#base-price').text(symboleLeft + basePrice + symboleRight);
     }
+});
+
+
+/* Search */
+var products = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    remote: {
+        wildcard: '%QUERY',
+        url: path + '/search/typeahead?query=%QUERY'
+    }
+});
+
+products.initialize();
+
+$("#typeahead").typeahead({
+    // hint: false,
+    highlight: true
+},{
+    name: 'products',
+    display: 'title',
+    limit: 10,
+    source: products
+});
+
+$('#typeahead').bind('typeahead:select', function(ev, suggestion) {
+    // console.log(suggestion);
+    window.location = path + '/search/?s=' + encodeURIComponent(suggestion.title);
 });

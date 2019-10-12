@@ -191,85 +191,34 @@
                 <!-- ============================================================= SEARCH AREA : END ============================================================= -->
             </div><!-- /.top-search-holder -->
 
-            <div class="col-xs-12 col-sm-12 col-md-3 top-cart-row no-margin">
+            <div class="col-xs-12 col-sm-12 col-md-3 top-cart-row no-margin" id="main_cart">
                 <div class="top-cart-row-container">
-                    <div class="wishlist-compare-holder">
-                        <div class="wishlist ">
-                            <a href="#"><i class="fa fa-heart"></i> wishlist <span class="value">(21)</span> </a>
-                        </div>
-                        <div class="compare">
-                            <a href="#"><i class="fa fa-exchange"></i> compare <span class="value">(2)</span> </a>
-                        </div>
-                    </div>
+
 
                     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
                     <div class="top-cart-holder dropdown animate-dropdown">
                         <div class="basket">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <div class="basket-item-count">
-                                    <span class="count">3</span>
+                                    <span class="count"><?=$_SESSION['cart.qty'];?></span>
                                     <img src="assets/images/icon-cart.png" alt="" />
                                 </div>
 
                                 <div class="total-price-basket">
-                                    <span class="lbl">your cart:</span>
-                                    <span class="total-price">
-                                                <span class="sign">$</span><span class="value">3219,00</span>
+                                    <span class="lbl">Корзина:</span>
+                                    <span class="total_count">
+
+                                         <?php if(!empty($_SESSION['cart'])): ?>
+                                         <span class="value session_cart cart_price"><?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></span>
+                                         <?php else: ?>
+                                      <span class="value cart_price">Пусто</span>
+                                         <?php endif; ?>
                                             </span>
                                 </div>
                             </a>
 
                             <ul class="dropdown-menu">
-                                <li>
-                                    <div class="basket-item">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-sm-4 no-margin text-center">
-                                                <div class="thumb">
-                                                    <img alt="" src="assets/images/products/product-small-01.jpg" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-8 no-margin">
-                                                <div class="title">Blueberry</div>
-                                                <div class="price">$270.00</div>
-                                            </div>
-                                        </div>
-                                        <a class="close-btn" href="#"></a>
-                                    </div>
-                                </li>
 
-                                <li>
-                                    <div class="basket-item">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-sm-4 no-margin text-center">
-                                                <div class="thumb">
-                                                    <img alt="" src="assets/images/products/product-small-01.jpg" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-8 no-margin">
-                                                <div class="title">Blueberry</div>
-                                                <div class="price">$270.00</div>
-                                            </div>
-                                        </div>
-                                        <a class="close-btn" href="#"></a>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="basket-item">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-sm-4 no-margin text-center">
-                                                <div class="thumb">
-                                                    <img alt="" src="assets/images/products/product-small-01.jpg" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-8 no-margin">
-                                                <div class="title">Blueberry</div>
-                                                <div class="price">$270.00</div>
-                                            </div>
-                                        </div>
-                                        <a class="close-btn" href="#"></a>
-                                    </div>
-                                </li>
 
 
                                 <li class="checkout">
@@ -294,6 +243,8 @@
         </div><!-- /.container -->
     </header>
     <!-- ============================================================= HEADER : END ============================================================= -->
+    <?php unset($_SESSION); ?>
+
 
     <?=$content;?>
     <!-- ========================================= TOP BRANDS : END ========================================= -->
@@ -637,8 +588,16 @@
             </div><!-- /.container -->
         </div><!-- /.copyright-bar -->
     </footer><!-- /#footer -->
+  <div class="total_price"><?=$_SESSION['cart.sum']?></div>
     <!-- ============================================================= FOOTER : END ============================================================= -->
 </div><!-- /.wrapper -->
+<script>
+    var path = '<?=PATH;?>',
+        course = <?=$curr['value'];?>,
+        symboleLeft = '<?=$curr['symbol_left'];?>',
+        symboleRight = '<?=$curr['symbol_right'];?>',
+        qty = '<?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?>';
+</script>
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery-1.10.2.min.js"></script>
@@ -658,6 +617,9 @@
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/buttons.js"></script>
 <script src="assets/js/scripts.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/typeahead.bundle.js"></script>
+<script src="js/main.js"></script>
 <!--<script src="js/jquery-1.11.0.min.js"></script>-->
 <!--<script src="js/jquery.smartmenus.js" type="text/javascript"></script>-->
 <!---->

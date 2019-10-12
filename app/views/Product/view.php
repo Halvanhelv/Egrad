@@ -151,13 +151,14 @@
 
                     <div class="qnt-holder">
                         <div class="le-quantity">
-                            <form>
+                            <form class="quantity">
                                 <a class="minus" href="#reduce"></a>
-                                <input name="quantity" readonly="readonly" type="text" value="1" />
+                                <input name="quantity"  type="number " size="4" value="1" min="1" />
                                 <a class="plus" href="#add"></a>
                             </form>
+                            
                         </div>
-                        <a id="addto-cart" href="cart.html" class="le-button huge">В корзину</a>
+                        <a id="addto-cart" href="cart/add?id=<?=$product->id;?>" data-id="<?=$product->id;?>" class="le-button huge add-to-cart-link">В корзину</a>
                     </div><!-- /.qnt-holder -->
                 </div><!-- /.body -->
 

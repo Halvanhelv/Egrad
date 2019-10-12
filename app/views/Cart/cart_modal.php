@@ -1,36 +1,26 @@
 <?php if(!empty($_SESSION['cart'])): ?>
-    <div class="table-responsive">
-        <table class="table table-hover table-striped">
-            <thead>
-            <tr>
-                <th>Фото</th>
-                <th>Наименование</th>
-                <th>Кол-во</th>
-                <th>Цена</th>
-                <th><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach($_SESSION['cart'] as $id => $item): ?>
-                <tr>
-                    <td><a href="product/<?=$item['alias'];?>"><img src="images/<?=$item['img'];?>" alt=""></a></td>
-                    <td><a href="product/<?=$item['alias'];?>"><?=$item['title'];?></td>
-                    <td><?=$item['qty'];?></td>
-                    <td><?=$item['price'];?></td>
-                    <td><span data-id="<?=$id;?>" class="glyphicon glyphicon-remove text-danger del-item" aria-hidden="true"></span></td>
-                </tr>
-            <?php endforeach; ?>
-                <tr>
-                    <td>Итого:</td>
-                    <td colspan="4" class="text-right cart-qty"><?=$_SESSION['cart.qty'];?></td>
-                </tr>
-                <tr>
-                    <td>На сумму:</td>
-                    <td colspan="4" class="text-right cart-sum"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="total_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></div>
+    <a class="close-btn" href="#"></a>
     </div>
+    <?php foreach($_SESSION['cart'] as $id => $item): ?>
+    <li>
+        <div class="basket-item">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 no-margin text-center"><div class="thumb">
+                        <img alt="" src="assets/images/products/product-small-01.jpg" />
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8 no-margin">
+                    <div class="title"><?=$item['title'];?></div>
+                    <div class="price"><?=$item['price'];?></div>
+                </div>
+            </div>
+
+    </li>
+
+    <?php endforeach; ?>
+
+
 <?php else: ?>
     <h3>Корзина пуста</h3>
 <?php endif; ?>

@@ -288,7 +288,7 @@
                                             </div>
                                             <div class="hover-area">
                                                 <div class="add-cart-button">
-                                                    <a href="single-product.html" class="le-button">add to cart</a>
+                                                    <a href="cart/add?id=<?=$product->id;?>"  data-id="<?=$product->id;?>" class="le-button add-to-cart-link">В корзину</a>
                                                 </div>
                                                 <div class="wish-compare">
                                                     <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
@@ -363,7 +363,7 @@
                                                 <div class="price-prev"><?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?><?=$curr['symbol_right'];?></div>
                                                 <?php endif; ?>
                                                 <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
-                                                <a class="le-button" href="#">add to cart</a>
+                                                <a class="le-button add-to-cart-link" data-id="<?=$product->id;?>" href="cart/add?id=<?=$product->id;?>">В корзину</a>
                                                 <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
                                             </div>
                                         </div>
