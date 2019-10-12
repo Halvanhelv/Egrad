@@ -1,9 +1,9 @@
-a:2:{s:4:"data";s:2232:"<li class="dropdown menu-item">
-                           <a href="category/men" class=" dropdown-toggle" data-toggle="dropdown">Men</a>
-                        <ul class="dropdown-menu mega-menu">
-                <li class="yamm-content">
-                    <div class="row">
-                        
+a:2:{s:4:"data";s:2090:"<li class="dropdown menu-item">
+                    <a href="category/men" class=" dropdown-toggle" data-toggle="dropdown">Men</a>
+            <ul class="dropdown-menu mega-menu">
+            <li class="yamm-content">
+                <div class="row">
+                    
 <div class="col-md-4">
     <ul class="list-unstyled">
         <li>
@@ -27,21 +27,21 @@ a:2:{s:4:"data";s:2232:"<li class="dropdown menu-item">
 </li><li>
     <a href="category/epos">Epos</a>
 </li>        </div>
-                    </div>
-                </li>
-            </ul>
-                    </li><!-- /.menu-item -->
+                </div>
+            </li>
+        </ul>
+    </li><!-- /.menu-item -->
 
 
 
 
 
 <li class="dropdown menu-item">
-                           <a href="category/women" class=" dropdown-toggle" data-toggle="dropdown">Women</a>
-                        <ul class="dropdown-menu mega-menu">
-                <li class="yamm-content">
-                    <div class="row">
-                        
+                    <a href="category/women" class=" dropdown-toggle" data-toggle="dropdown">Women</a>
+            <ul class="dropdown-menu mega-menu">
+            <li class="yamm-content">
+                <div class="row">
+                    
 <div class="col-md-4">
     <ul class="list-unstyled">
         <li>
@@ -59,21 +59,21 @@ a:2:{s:4:"data";s:2232:"<li class="dropdown menu-item">
                     <li>
     <a href="category/anne-klein">Anne Klein</a>
 </li>        </div>
-                    </div>
-                </li>
-            </ul>
-                    </li><!-- /.menu-item -->
+                </div>
+            </li>
+        </ul>
+    </li><!-- /.menu-item -->
 
 
 
 
 
 <li class="dropdown menu-item">
-                    <a href="category/kids" class=" " data-toggle="dropdown">Kids</a>
-                    </li><!-- /.menu-item -->
+            <a href="category/kids" class=" " data-toggle="dropdown">Kids</a>
+    </li><!-- /.menu-item -->
 
 
 
 
 
-";s:8:"end_time";i:1570814490;}
+";s:8:"end_time";i:1570881161;}

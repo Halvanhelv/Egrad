@@ -45,7 +45,7 @@ class Menu{
                 $this->data = $cats = \R::getAssoc("SELECT * FROM {$this->table}");
             }
             $this->tree = $this->getTree();
-            $this->menuHtml = $this->getMenuHtml($this->tree);
+            $this->menuHtml = $this->getMenuHtml($this->tree,$tab='',$tpl='1');
 
             if($this->cache){
                 $cache->set($this->cacheKey, $this->menuHtml, $this->cache);
@@ -62,8 +62,8 @@ class Menu{
             }
         }
         echo "<{$this->container} class='{$this->class}' $attrs>";
-            echo $this->prepend;
-            echo $this->menuHtml;
+        echo $this->prepend;
+        echo $this->menuHtml;
         echo "</{$this->container}>";
     }
 
@@ -80,43 +80,32 @@ class Menu{
         return $tree;
     }
 
-    protected function getMenuHtml($tree, $tab = ''){
+    protected function getMenuHtml($tree, $tab = '',$tpl){
         $str = '';
         foreach($tree as $id => $category){
-            $str .= $this->catToTemplate($category, $tab, $id);
+            $str .= $this->catToTemplate($category, $tab, $id,$tpl);
         }
         return $str;
     }
 
-    protected function getMenuHtml_second($tree, $tab = ''){
-        $str = '';
-        foreach($tree as $id => $category){
-            $str .= $this->catToTemplate2($category, $tab, $id);
+
+
+    protected function catToTemplate($category, $tab, $id,$tpl){
+        ob_start();
+        if($tpl=='1') {
+            require $this->tpl;
         }
-        return $str;
-    }
-    protected function getMenuHtml_third($tree, $tab = ''){
-        $str = '';
-        foreach($tree as $id => $category){
-            $str .= $this->catToTemplate3($category, $tab, $id);
+
+        elseif ($tpl=='2')
+        {
+            require $this->tpl2;
         }
-        return $str;
+        else
+        {
+            require $this->tpl3;
+        }
+        return ob_get_clean();
     }
 
-    protected function catToTemplate($category, $tab, $id){
-        ob_start();
-        require $this->tpl;
-        return ob_get_clean();
-    }
-    protected function catToTemplate2($category, $tab, $id){
-        ob_start();
-        require $this->tpl2;
-        return ob_get_clean();
-    }
-    protected function catToTemplate3($category, $tab, $id){
-        ob_start();
-        require $this->tpl3;
-        return ob_get_clean();
-    }
 
 }

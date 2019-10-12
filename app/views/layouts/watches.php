@@ -12,7 +12,7 @@
 
     <!-- Customizable CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/colors/green.css">
+    <link rel="stylesheet" href="assets/css/colors/orange.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -25,8 +25,8 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="sm-mint/sm-mint.css">
-    <link href='sm-core-css.css' rel='stylesheet' type='text/css' />
+
+
 
     <!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
     <!--[if lt IE 9]>
