@@ -198,7 +198,7 @@
                     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
                     <div class="top-cart-holder dropdown animate-dropdown">
                         <div class="basket">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="cart/show" onclick="getCart(); return false;">
                                 <div class="basket-item-count">
                                     <span class="count"><?=$_SESSION['cart.qty'];?></span>
                                     <img src="assets/images/icon-cart.png" alt="" />
@@ -206,6 +206,7 @@
 
                                 <div class="total-price-basket">
                                     <span class="lbl">Корзина:</span>
+
                                     <span class="total_count">
 
                                          <?php if(!empty($_SESSION['cart'])): ?>
@@ -220,19 +221,12 @@
                             <ul class="dropdown-menu">
 
 
+                                <div class="total_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></div>
+                                <a class="close-btn" href="#"></a>
+                        </div>
 
-                                <li class="checkout">
-                                    <div class="basket-item">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-6">
-                                                <a href="cart.html" class="le-button inverse">View cart</a>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <a href="checkout.html" class="le-button">Checkout</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+
+
 
                             </ul>
                         </div><!-- /.basket -->
@@ -588,15 +582,15 @@
             </div><!-- /.container -->
         </div><!-- /.copyright-bar -->
     </footer><!-- /#footer -->
-  <div class="total_price"><?=$_SESSION['cart.sum']?></div>
+
     <!-- ============================================================= FOOTER : END ============================================================= -->
 </div><!-- /.wrapper -->
 <script>
     var path = '<?=PATH;?>',
         course = <?=$curr['value'];?>,
         symboleLeft = '<?=$curr['symbol_left'];?>',
-        symboleRight = '<?=$curr['symbol_right'];?>',
-        qty = '<?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?>';
+        symboleRight = '<?=$curr['symbol_right'];?>';
+
 </script>
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->

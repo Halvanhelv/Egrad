@@ -9,17 +9,20 @@ use Swift_SmtpTransport;
 
 class Order extends AppModel {
 
-    public static function saveOrder($data){
-        $order = \R::dispense('order');
-        $order->user_id = $data['user_id'];
-        $order->note = $data['note'];
-        $order->currency = $_SESSION['cart.currency']['code'];
-        $order_id = \R::store($order);
-        self::saveOrderProduct($order_id);
-        return $order_id;
+    public function saveOrder($data){
+
+        $this->attributes['user_id'] = $data['user_id'];
+        $this->attributes['currency'] = $_SESSION['cart.currency']['code'];
+        $this->attributes['note'] = $data['note'];
+
+        $order = $this->save('order');
+
+
+        $this->saveOrderProduct($order);
+        return $order;
     }
 
-    public static function saveOrderProduct($order_id){
+    public  function saveOrderProduct($order_id){
         $sql_part = '';
         foreach($_SESSION['cart'] as $product_id => $product){
             $product_id = (int)$product_id;
@@ -28,8 +31,8 @@ class Order extends AppModel {
         $sql_part = rtrim($sql_part, ',');
         \R::exec("INSERT INTO order_product (order_id, product_id, qty, title, price) VALUES $sql_part");
     }
-
     public static function mailOrder($order_id, $user_email){
+
         // Create the Transport
         $transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'), App::$app->getProperty('smtp_port'), App::$app->getProperty('smtp_protocol')))
             ->setUsername(App::$app->getProperty('smtp_login'))

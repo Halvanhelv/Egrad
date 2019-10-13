@@ -81,7 +81,7 @@
                             <?php endforeach; ?>
 
 
-                        </div><!-- /#owl-single-product-thumbnails -->
+                        </div><!-- /#owl-single-product-thumbnails -->f
 
                         <div class="nav-holder left hidden-xs">
                             <a class="prev-btn slider-prev" data-target="#owl-single-product-thumbnails" href="#prev"></a>
