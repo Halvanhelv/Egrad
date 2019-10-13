@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <!-- Meta -->
+
     <?=$this->getMeta();?>
 
 
@@ -200,7 +201,11 @@
                         <div class="basket">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="cart/show" onclick="getCart(); return false;">
                                 <div class="basket-item-count">
+                                    <?php if(isset($_SESSION['cart'])): ?>
                                     <span class="count"><?=$_SESSION['cart.qty'];?></span>
+                                    <?php else: ?>
+                                    <span class="count">0</span>
+                                    <?php endif; ?>
                                     <img src="assets/images/icon-cart.png" alt="" />
                                 </div>
 
@@ -210,9 +215,9 @@
                                     <span class="total_count">
 
                                          <?php if(!empty($_SESSION['cart'])): ?>
-                                         <span class="value session_cart cart_price"><?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></span>
+                                         <span class="value session_cart cart_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></span>
                                          <?php else: ?>
-                                      <span class="value cart_price">Пусто</span>
+                                      <span class="value">Пусто</span>
                                          <?php endif; ?>
                                             </span>
                                 </div>
@@ -221,9 +226,11 @@
                             <ul class="dropdown-menu">
 
 
-                                <div class="total_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></div>
+                                <div class="total_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?>
+                                </div>
                                 <a class="close-btn" href="#"></a>
-                        </div>
+
+
 
 
 
@@ -237,7 +244,7 @@
         </div><!-- /.container -->
     </header>
     <!-- ============================================================= HEADER : END ============================================================= -->
-    <?php unset($_SESSION); ?>
+
 
 
     <?=$content;?>

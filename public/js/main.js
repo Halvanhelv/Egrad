@@ -48,6 +48,7 @@ $('body').on('click', '.add-to-cart-link', function(e){
          type: 'GET',
          success: function(res){
              showCart(res);
+
          },
          error: function(){
              alert('Ошибка! Попробуйте позже');
@@ -74,10 +75,17 @@ function showCart(cart){
 
     $('#main_cart .dropdown-menu').html(cart);
 
-    if($('.total_price').text()){
-        $('.cart_price').html($('.top-cart-row .total_price').text());
+    if($('.total_sum').text()){
+        $('.total_count').html($('.top-cart-row .total_sum').text());
     }else{
-        $('.cart_price').text('Пусто');
+        $('.total_count').text('Пусто');
+    }
+    if($('.total_qty').text()) {
+        $('.count').html($('.top-cart-row .total_qty').text());
+    }
+else
+    {
+        $('.count').text('0');
     }
 }
 

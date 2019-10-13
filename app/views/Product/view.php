@@ -158,7 +158,7 @@
                             </form>
                             
                         </div>
-                        <a id="addto-cart" href="cart/add?id=<?=$product->id;?>" data-id="<?=$product->id;?>" class="le-button huge add-to-cart-link">В корзину</a>
+                        <a id="addto-cart" href="cart/add?id=<?=$product->id;?>" data-id="<?=$product->id;?>" class="le-button huge add-to-cart-link">Купить</a>
                     </div><!-- /.qnt-holder -->
                 </div><!-- /.body -->
 

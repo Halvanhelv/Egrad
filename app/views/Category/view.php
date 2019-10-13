@@ -288,7 +288,7 @@
                                             </div>
                                             <div class="hover-area">
                                                 <div class="add-cart-button">
-                                                    <a href="cart/add?id=<?=$product->id;?>"  data-id="<?=$product->id;?>" class="le-button add-to-cart-link">В корзину</a>
+                                                    <a href="cart/add?id=<?=$product->id;?>"  data-id="<?=$product->id;?>" class="le-button add-to-cart-link">Купить</a>
                                                 </div>
                                                 <div class="wish-compare">
                                                     <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
