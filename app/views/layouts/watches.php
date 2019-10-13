@@ -194,11 +194,18 @@
 
             <div class="col-xs-12 col-sm-12 col-md-3 top-cart-row no-margin" id="main_cart">
                 <div class="top-cart-row-container">
-
+                    <div style="opacity: 0; user-select: none" class="wishlist-compare-holder">
+                        <div class="wishlist ">
+                            <p><i class="fa fa-heart"></i> wishlist <span class="value">(21)</span> </p>
+                        </div>
+                        <div class="compare">
+                           <p><i class="fa fa-exchange"></i> compare <span class="value">(2)</span> </p>
+                        </div>
+                    </div>
 
                     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
                     <div class="top-cart-holder dropdown animate-dropdown">
-                        <div class="basket">
+                        <div class="basket" >
                             <a class="dropdown-toggle" data-toggle="dropdown" href="cart/show" onclick="getCart(); return false;">
                                 <div class="basket-item-count">
                                     <?php if(isset($_SESSION['cart'])): ?>
