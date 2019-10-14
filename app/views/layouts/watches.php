@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
 
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -162,14 +165,18 @@
                     <div class="contact inline">
                         <i class="fa fa-envelope"></i> contact@<span class="le-color">oursupport.com</span>
                     </div>
-                </div><!-- /.contact-row -->
-                <!-- ============================================================= SEARCH AREA ============================================================= -->
-                <div class="search-area">
-                    <form>
-                        <div class="control-group">
-                            <input class="search-field" placeholder="Поиск" />
 
-                            <ul class="categories-filter animate-dropdown">
+                </div><!-- /.contact-row -->
+
+                <!-- ============================================================= SEARCH AREA ============================================================= -->
+                <div class="search-area" >
+
+                        <div class="control-group" >
+                            <form class="ui-widget ">
+                                <label for="search"></label>
+                            <input  class="search-field " id="search" name="s" placeholder="Поиск"  />
+
+                            <ul class="categories-filter animate-dropdown" >
                                 <li class="dropdown">
 
                                     <a class="dropdown-toggle"  data-toggle="dropdown" href="category-grid.html">all categories</a>
@@ -219,23 +226,20 @@
                                 <div class="total-price-basket">
                                     <span class="lbl">Корзина:</span>
 
-                                    <span class="total_count">
+                                   <span class="total_count total-price">
 
                                          <?php if(!empty($_SESSION['cart'])): ?>
                                          <span class="value session_cart cart_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></span>
                                          <?php else: ?>
                                       <span class="value">Пусто</span>
                                          <?php endif; ?>
-                                            </span>
+                                        </span>
                                 </div>
                             </a>
 
                             <ul class="dropdown-menu">
 
 
-                                <div class="total_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?>
-                                </div>
-                                <a class="close-btn" href="#"></a>
 
 
 
@@ -608,7 +612,7 @@
 </script>
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->
-<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="assets/js/jquery-migrate-1.2.1.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyDDZJO4F0d17RnFoi1F2qtw4wn6Wcaqxao&sensor=false&amp;language=en"></script>
@@ -626,13 +630,44 @@
 <script src="assets/js/buttons.js"></script>
 <script src="assets/js/scripts.js"></script>
 <script src="js/validator.js"></script>
-<script src="js/typeahead.bundle.js"></script>
 <script src="js/main.js"></script>
-<!--<script src="js/jquery-1.11.0.min.js"></script>-->
-<!--<script src="js/jquery.smartmenus.js" type="text/javascript"></script>-->
-<!---->
-<!--<script>$(function() {-->
-<!--        $('#main-menu').smartmenus();-->
-<!--    });</script>-->
+
+<script src="js/jquery-ui.min.js"></script>
+
+<script>
+    $( function() {
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $( "#search" ).autocomplete({
+
+            source:   "http://govno/search/typeahead",
+            minLength: 3,
+
+        });
+    } );
+</script>
+
 </body>
 </html>

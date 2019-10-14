@@ -1,7 +1,7 @@
 
 <div class="col-md-4">
     <ul class="list-unstyled">
-        <li>
+        <li style="font-weight: bold">
             <a href="category/<?=$category['alias'];?>"><?=$category['title'];?></a>
         </li>
         <?php if(isset($category['childs'])): ?>
