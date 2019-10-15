@@ -8,10 +8,11 @@ class SearchController extends AppController{
         if($this->isAjax()){
             $query = !empty(trim($_GET['term'])) ? trim($_GET['term']) : null;
             if($query){
-                $products = \R::getAll('SELECT id, title FROM product WHERE title LIKE ? LIMIT 11', ["%{$query}%"]);
+                $products = \R::getAll('SELECT alias, id, title FROM product WHERE title LIKE ? LIMIT 11', ["%{$query}%"]);
                    foreach ($products as $item)
                 {
-                    $result_search[] = ['label' => $item['title']];
+                    $result_search[] = ['label' => $item['title'],
+                        'id' => $item['alias']];
                 }
                 echo json_encode($result_search);
             }

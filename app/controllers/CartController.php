@@ -19,7 +19,7 @@ class CartController extends AppController {
                 return false;
             }
             if($mod_id){
-                $mod = \R::findOne('modification', 'id = ? AND product_id = ?', [$mod_id, $id]);
+                $mod = \R::findOne('modification', 'id = ? AND product_id = ?', [$mod_id, $id]);    
             }
         }
         $cart = new Cart();

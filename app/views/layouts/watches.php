@@ -172,7 +172,7 @@
                 <div class="search-area" >
 
                         <div class="control-group" >
-                            <form class="ui-widget ">
+                            <form class="ui-widget" action="search" method="get" autocomplete="off">
                                 <label for="search"></label>
                             <input  class="search-field " id="search" name="s" placeholder="Поиск"  />
 
@@ -191,7 +191,8 @@
                                 </li>
                             </ul>
 
-                            <a class="search-button" href="#" ></a>
+                                   <a class="search-button" onclick="form.submit(); href="" type="submit" ></a>
+
 
                         </div>
                     </form>
@@ -636,38 +637,19 @@
 
 <script>
     $( function() {
-        var availableTags = [
-            "ActionScript",
-            "AppleScript",
-            "Asp",
-            "BASIC",
-            "C",
-            "C++",
-            "Clojure",
-            "COBOL",
-            "ColdFusion",
-            "Erlang",
-            "Fortran",
-            "Groovy",
-            "Haskell",
-            "Java",
-            "JavaScript",
-            "Lisp",
-            "Perl",
-            "PHP",
-            "Python",
-            "Ruby",
-            "Scala",
-            "Scheme"
-        ];
+
         $( "#search" ).autocomplete({
 
             source:   "http://govno/search/typeahead",
             minLength: 3,
-
+            select: function( event, ui ) {
+                console.log(ui.id);
+                window.location =  'http://govno/product/' + encodeURIComponent(ui.item.id);
+            }
         });
     } );
 </script>
+
 
 </body>
 </html>
