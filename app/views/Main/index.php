@@ -1,5 +1,6 @@
     <div id="top-banner-and-menu">
     <div class="container">
+        <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
         <div class="col-xs-12 col-sm-4 col-md-3 sidemenu-holder">
             <!-- ================================== TOP NAVIGATION ================================== -->
             <div class="side-menu animate-dropdown">
@@ -114,7 +115,7 @@
                                     <div class="brand">canon</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-current text-right">$1199.00</div>
+                                    <div class="price-current text-right"><?=$curr['symbol_left'];?><?=$hit->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -135,6 +136,7 @@
 
                 </div><!-- /.row -->
                 <?php if($hits): ?>
+                    <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
                 <div class="row no-margin">
                     <?php $i = 0; ?>
                     <?php foreach($hits as $hit): ?>
@@ -154,7 +156,7 @@
                                         <div class="brand">canon</div>
                                     </div>
                                     <div class="prices">
-                                        <div class="price-current text-right">$1199.00</div>
+                                        <div class="price-current text-right"><?=$curr['symbol_left'];?><?=$hit->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
                                     </div>
                                     <div class="hover-area">
                                         <div class="add-cart-button">

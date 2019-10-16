@@ -81,7 +81,7 @@
                             <?php endforeach; ?>
 
 
-                        </div><!-- /#owl-single-product-thumbnails -->f
+                        </div><!-- /#owl-single-product-thumbnails -->
 
                         <div class="nav-holder left hidden-xs">
                             <a class="prev-btn slider-prev" data-target="#owl-single-product-thumbnails" href="#prev"></a>
@@ -392,26 +392,29 @@
     </section><!-- /#single-product-tab -->
     <!-- ========================================= SINGLE PRODUCT TAB : END ========================================= -->
     <!-- ========================================= RECENTLY VIEWED ========================================= -->
-    <?php if($recentlyViewed): ?>
+    <?php if($related): ?>
     <section id="recently-reviewd" class="wow fadeInUp">
         <div class="container">
             <div class="carousel-holder hover">
 
                 <div class="title-nav">
 
-                    <h2 class="h1">Недавно просмотренные:</h2>
+                    <h2 class="h1">C этим покупают</h2>
                     <div class="nav-holder">
                         <a href="#prev" data-target="#owl-recently-viewed" class="slider-prev btn-prev fa fa-angle-left"></a>
                         <a href="#next" data-target="#owl-recently-viewed" class="slider-next btn-next fa fa-angle-right"></a>
                     </div>
                 </div><!-- /.title-nav -->
-    <?php foreach($recentlyViewed as $item): ?>
+
+
                 <div id="owl-recently-viewed" class="owl-carousel product-grid-holder">
+                    <?php foreach($related as $item): ?>
                     <div class="no-margin carousel-item product-item-holder size-small hover">
+
                         <div class="product-item">
                             <div class="ribbon red"><span>sale</span></div>
                             <div class="image">
-                                <a href="">
+                                <a href="product/<?=$item['alias'];?>">
                                 <img alt="" src="assets/images/blank.gif" style="max-height: 143px" data-echo="images/<?=$item['img'];?>" />
                                 </a>
                             </div>
@@ -428,31 +431,78 @@
                                 <div class="add-cart-button">
                                     <a href="cart/add?id=<?=$item['id'];?>" class="le-button">В корзину</a>
                                 </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
+
                             </div>
                         </div><!-- /.product-item -->
                     </div><!-- /.product-item-holder -->
 
 
-
+                    <?php endforeach; ?>
 
                 </div><!-- /#recently-carousel -->
-    <?php endforeach; ?>
+
 
             </div><!-- /.carousel-holder -->
         </div><!-- /.container -->
     </section><!-- /#recently-reviewd -->
     <?php endif; ?>
-    <!-- ========================================= RECENTLY VIEWED : END ========================================= -->
-    <!-- ============================================================= FOOTER ============================================================= -->
-
-    <!-- ============================================================= FOOTER : END ============================================================= -->
 
 
-<!-- JavaScripts placed at the end of the document so the pages load faster -->
 
 
-</html>
+
+<?php if($recentlyViewed): ?>
+    <section id="recently-reviewd-2" class="wow fadeInUp">
+        <div class="container">
+            <div class="carousel-holder hover">
+
+                <div class="title-nav">
+
+                    <h2 class="h1">Ранее просмотренное</h2>
+                    <div class="nav-holder">
+                        <a href="#prev" data-target="#owl-recently-viewed-2" class="slider-prev btn-prev fa fa-angle-left"></a>
+                        <a href="#next" data-target="#owl-recently-viewed-2" class="slider-next btn-next fa fa-angle-right"></a>
+                    </div>
+                </div><!-- /.title-nav -->
+
+
+                <div id="owl-recently-viewed-2" class="owl-carousel product-grid-holder">
+                    <?php foreach($recentlyViewed as $item): ?>
+                        <div class="no-margin carousel-item product-item-holder size-small hover">
+
+                            <div class="product-item">
+                                <div class="ribbon red"><span>sale</span></div>
+                                <div class="image">
+                                    <a href="product/<?=$item['alias'];?>">
+                                        <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px" data-echo="images/<?=$item['img'];?>" />
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <div class="title">
+                                        <a href="product/<?=$item['alias'];?>"><?=$item['title'];?></a>
+                                    </div>
+                                    <div class="brand">Sharp</div>
+                                </div>
+                                <div class="prices">
+                                    <div class="price-current text-right"><?=$curr['symbol_left'];?><?=$item['price'] * $curr['value'];?><?=$curr['symbol_right'];?></div>
+                                </div>
+                                <div class="hover-area">
+                                    <div class="add-cart-button">
+                                        <a href="cart/add?id=<?=$item['id'];?>" class="le-button">В корзину</a>
+                                    </div>
+
+                                </div>
+                            </div><!-- /.product-item -->
+                        </div><!-- /.product-item-holder -->
+
+
+                    <?php endforeach; ?>
+
+                </div><!-- /#recently-carousel -->
+
+
+            </div><!-- /.carousel-holder -->
+        </div><!-- /.container -->
+    </section><!-- /#recently-reviewd -->
+<?php endif; ?>
+

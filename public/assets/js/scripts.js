@@ -182,11 +182,11 @@
         $("#owl-recently-viewed-2").owlCarousel({
             stopOnHover: true,
             rewindNav: true,
-            items: 4,
+            items: 6,
             pagination: false,
-            itemsTablet: [768,3],
-            itemsDesktopSmall: [1199,3],
+            itemsTablet: [768,3]
         });
+
 
         $("#owl-brands").owlCarousel({
             stopOnHover: true,
