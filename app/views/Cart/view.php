@@ -36,7 +36,7 @@
                                     <a href="<?= PATH ?>">Главная</a>
                                 </li>
                                 <li class="breadcrumb-item current ">
-                                    <a href="cart/view">Корзина</a>
+                                    <a onclick="return false" class="click_disabled">Корзина</a>
                                 </li>
 
                             </ul>

@@ -2,6 +2,9 @@
 
 namespace app\controllers;
 
+use ishop\App;
+use ishop\libs\Pagination;
+
 class SearchController extends AppController{
 
     public function typeaheadAction(){
@@ -21,12 +24,20 @@ class SearchController extends AppController{
     }
 
     public function indexAction(){
+
         $query = !empty(trim($_GET['s'])) ? trim($_GET['s']) : null;
-        if($query){
-            $products = \R::find('product', "title LIKE ?", ["%{$query}%"]);
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $perpage = App::$app->getProperty('pagination');
+        $total = \R::count('product', "title LIKE ?", ["%{$query}%"]);
+
+        $pagination = new Pagination($page, $perpage, $total);
+        $start = $pagination->getStart();
+        if($total){
+            $products = \R::find('product',  "title LIKE ? LIMIT $start, $perpage",  ["%{$query}%"] );
         }
+
         $this->setMeta('Поиск по: ' . h($query));
-        $this->set(compact('products', 'query'));
+        $this->set(compact('products', 'query','pagination', 'total'));
     }
 
 }

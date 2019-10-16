@@ -2942,3 +2942,33 @@
 =================
 [2019-10-15 15:37:38] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
 =================
+[2019-10-16 13:13:20] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:14:05] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:14:10] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:14:20] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:15:36] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:16:05] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:26:46] Текст ошибки: Страница не найдена | Файл: W:\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-10-16 13:31:48] Текст ошибки: Class 'app\controllers\Pagination' not found | Файл: W:\domains\govno\app\controllers\SearchController.php | Строка: 28
+=================
+[2019-10-16 13:42:49] Текст ошибки: Too few arguments to function ishop\libs\Pagination::__construct(), 0 passed in W:\domains\govno\app\controllers\SearchController.php on line 26 and exactly 3 expected | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 13
+=================
+[2019-10-16 13:43:02] Текст ошибки: Unsupported operand types | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 64
+=================
+[2019-10-16 13:43:32] Текст ошибки: Unsupported operand types | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 64
+=================
+[2019-10-16 13:43:35] Текст ошибки: Unsupported operand types | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 64
+=================
+[2019-10-16 13:43:36] Текст ошибки: Unsupported operand types | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 64
+=================
+[2019-10-16 13:45:07] Текст ошибки: Unsupported operand types | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 64
+=================
+[2019-10-16 13:45:09] Текст ошибки: Unsupported operand types | Файл: W:\domains\govno\vendor\ishop\core\libs\Pagination.php | Строка: 64
+=================

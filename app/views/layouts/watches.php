@@ -29,7 +29,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
+    <link rel="stylesheet" href="assets/css/custom.css">
 
 
     <!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
@@ -172,7 +172,7 @@
                 <div class="search-area" >
 
                         <div class="control-group" >
-                            <form class="ui-widget" action="search" method="get" autocomplete="off">
+                            <form class="ui-widget" name="search" action="search" method="get" autocomplete="off">
                                 <label for="search"></label>
                             <input  class="search-field " id="search" name="s" placeholder="Поиск"  />
 
@@ -191,7 +191,7 @@
                                 </li>
                             </ul>
 
-                                   <a class="search-button" onclick="form.submit(); href="" type="submit" ></a>
+                                   <a class="search-button" href="javascript: document.search.submit();" ></a>
 
 
                         </div>
