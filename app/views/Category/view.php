@@ -270,7 +270,7 @@
                                         <div class="product-item">
                                             <div class="ribbon red"><span>Популярно</span></div>
                                             <div class="image">
-                                                <a href="product/<?=$product->alias;?>">  <img alt="" src="images/<?=$product->img;?>" data-echo="images/<?=$product->img;?>" /></a>
+                                                <a href="product/<?=$product->alias;?>">  <img alt="" src="images/<?=$product->img;?>" style="max-width: 246px; max-height: 186px" data-echo="images/<?=$product->img;?>" /></a>
                                             </div>
                                             <div class="body">
                                                 <div class="label-discount green">-50% sale</div>
@@ -283,7 +283,10 @@
 
                                                 <?php if($product->old_price): ?>
                                                 <div class="price-prev"><?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?><?=$curr['symbol_right'];?></div>
+                                                <?php else:?>
+                                                    <div class="price-prev"></div>
                                                 <?php endif; ?>
+
                                                 <div class="price-current pull-right"><?=$curr['symbol_left'];?><?=$product->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
                                             </div>
                                             <div class="hover-area">
