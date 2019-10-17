@@ -17,7 +17,8 @@
 
                     </div>
                 </div>
-                <a class="close-btn" href="#"></a>
+
+                <span class="close-btn del-item " style="cursor:pointer;" data-id="<?=$id;?>"></span>
         </li>
 
     <?php endforeach; ?>

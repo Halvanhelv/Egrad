@@ -56,7 +56,7 @@ $('body').on('click', '.add-to-cart-link', function(e){
      });
 });
 
-$('#cart .modal-body').on('click', '.del-item', function(){
+$('#main_cart .dropdown-menu').on('click', '.del-item', function(){
     var id = $(this).data('id');
     $.ajax({
         url: '/cart/delete',
