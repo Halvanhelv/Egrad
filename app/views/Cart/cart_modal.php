@@ -1,6 +1,6 @@
 <?php if(!empty($_SESSION['cart'])): ?>
 
-        <a class="close-btn" href="#"></a>
+
 
         <?php foreach($_SESSION['cart'] as $id => $item): ?>
         <li>
@@ -14,9 +14,10 @@
                         <div class="title"><?=$item['title'];?></div>
 
                         <div class="price"><?=$item['price'] ;?>  <?=$_SESSION['cart.currency']['symbol_right'] ;?> </div>
+
                     </div>
                 </div>
-
+                <a class="close-btn" href="#"></a>
         </li>
 
     <?php endforeach; ?>
