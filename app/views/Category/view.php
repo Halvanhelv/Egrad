@@ -40,7 +40,7 @@
 <section id="category-grid">
     <div class="container">
         <!-- ========================================= SIDEBAR ========================================= -->
-        <div class="col-xs-12 col-sm-3 no-margin sidebar narrow">
+        <div class="col-xs-12 col-sm-3 no-margin sidebar narrow w_sidebar">
             <!-- ========================================= PRODUCT FILTER ========================================= -->
             <?php new \app\widgets\filter\Filter(); ?>
             <!-- ========================================= PRODUCT FILTER : END ========================================= -->
@@ -238,11 +238,12 @@
         <!-- ========================================= SIDEBAR : END ========================================= -->
 
         <!-- ========================================= CONTENT ========================================= -->
-        <div class="col-xs-12 col-sm-9 no-margin wide sidebar">
+        <div class="col-xs-12 col-sm-9 no-margin ">
 
 
-            <section id="gaming">
-                <div class="grid-list-products">
+            <section id="gaming " class="product-one">
+
+                <div class="grid-list-products  ">
                     <h2 class="section-title">rerer</h2>
 
                     <div class="control-bar">
@@ -263,12 +264,16 @@
 
                             <div class="product-grid-holder">
                                 <div class="row no-margin">
+
                                     <?php if(!empty($products)): ?>
+
                                     <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
                                     <?php foreach($products as $product): ?>
                                     <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
+
                                         <div class="product-item">
                                             <div class="ribbon red"><span>Популярно</span></div>
+
                                             <div class="image">
                                                 <a href="product/<?=$product->alias;?>">  <img alt="" src="images/<?=$product->img;?>" style="max-width: 246px; max-height: 186px" data-echo="images/<?=$product->img;?>" /></a>
                                             </div>

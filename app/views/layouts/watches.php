@@ -601,7 +601,7 @@
             </div><!-- /.container -->
         </div><!-- /.copyright-bar -->
     </footer><!-- /#footer -->
-
+    <div class="preloader"><img src="images/ring.svg" alt=""></div>
     <!-- ============================================================= FOOTER : END ============================================================= -->
 </div><!-- /.wrapper -->
 <script>
