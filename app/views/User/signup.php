@@ -50,30 +50,46 @@
             <div class="col-md-6 col-md-offset-3">
                 <section class="section register inner-left-xs">
                     <h2 class="bordered">Регистрация</h2>
+                    <?php if(isset($_SESSION['error'])): ?>
+                        <div class="alert alert-danger">
+                            <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if(isset($_SESSION['success'])): ?>
+                        <div class="alert alert-success">
+                            <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+                        </div>
+                    <?php endif; ?>
                     <p>Create your own Media Center account</p>
 
                     <form role="form" class="register-form cf-style-1" method="post" action="user/signup" id="signup"  data-toggle="validator">
-                        <div class="field-row">
+                        <div class="field-row has-feedback">
                             <label for="login">Login</label>
-                            <input   type="text" name="login" class=" le-input"" id="login" placeholder="Login" value="<?=isset($_SESSION['form_data']['login']) ? h($_SESSION['form_data']['login']) : '';?>" required>
+                            <input   type="text" name="login" class=" le-input" id ="login" placeholder="Login" value="<?=isset($_SESSION['form_data']['login']) ? h($_SESSION['form_data']['login']) : '';?>" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                         </div>
-                        <div class="field-row">
-                            <label for="pasword">Password</label>
-                            <input type="password" name="password" class="le-input " id="pasword" placeholder="Password" data-error="Пароль должен включать не менее 6 символов" data-minlength="6" value="<?=isset($_SESSION['form_data']['password']) ? h($_SESSION['form_data']['password']) : '';?>" required>
+                        <div class="field-row has-feedback">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="le-input  " id="password" placeholder="Password" data-error="Пароль должен включать не менее 6 символов" data-minlength="6" value="<?=isset($_SESSION['form_data']['password']) ? h($_SESSION['form_data']['password']) : '';?>" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="help-block with-errors"></div>
                         </div>
-                        <div class="field-row">
+                        <div class="field-row has-feedback">
                             <label for="name">Имя</label>
                             <input type="text" name="name" class="le-input" id="name" placeholder="Имя" value="<?=isset($_SESSION['form_data']['name']) ? h($_SESSION['form_data']['name']) : '';?>" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
                         </div>
-                        <div class="field-row">
+                        <div class="field-row has-feedback">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="le-input" id="email" placeholder="Email" value="<?=isset($_SESSION['form_data']['email']) ? h($_SESSION['form_data']['email']) : '';?>" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
                         </div>
-                        <div class="field-row">
+                        <div class="field-row has-feedback">
                             <label for="address">Address</label>
                             <input type="text" name="address" class="le-input" id="address" placeholder="Address" value="<?=isset($_SESSION['form_data']['address']) ? h($_SESSION['form_data']['address']) : '';?>" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
                         </div>
 
@@ -97,3 +113,4 @@
         </div><!-- /.row -->
     </div><!-- /.container -->
 </main>
+<script>$('#signup').validator()</script>

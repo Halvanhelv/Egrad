@@ -46,8 +46,18 @@
             <div class="row">
 
                 <div class="col-md-6 col-md-offset-3">
-                    <section class="section sign-in inner-right-xs">
+                    <section class="section sign-in inner-right-xs ">
                         <h2 class="bordered">Войти</h2>
+                        <?php if(isset($_SESSION['error'])): ?>
+                            <div class="alert alert-danger">
+                                <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if(isset($_SESSION['success'])): ?>
+                            <div class="alert alert-success">
+                                <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+                            </div>
+                        <?php endif; ?>
                         <p>Hello, Welcome to your account</p>
 
                         <div class="social-auth-buttons">
@@ -63,14 +73,16 @@
 
 
                             <form method="post" action="user/login" id="login" role="form" data-toggle="validator" class="login-form cf-style-1">
-                            <div class="field-row">
+                            <div class="field-row has-feedback">
                                 <label for="login">Login</label>
                                 <input type="text" name="login" class="le-input" id="login" placeholder="Login" required>
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             </div><!-- /.field-row -->
 
-                            <div class="field-row">
+                            <div class="field-row has-feedback">
                                 <label for="pasword">Password</label>
                                 <input type="password" name="password" class="le-input" id="pasword" placeholder="Password" required>
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             </div><!-- /.field-row -->
 
                             <div class="field-row clearfix">

@@ -18,7 +18,13 @@ class UserController extends AppController {
                 $user->attributes['password'] = password_hash($user->attributes['password'], PASSWORD_DEFAULT);
                 if($user->save('user')){
                     $_SESSION['success'] = 'Пользователь зарегистрирован';
-                }else{
+
+                        $_SESSION['user']['login'] = $data['login'];
+                        $_SESSION['user']['name'] = $data['name'];
+                        $_SESSION['user']['email'] = $data['email'];
+                        $_SESSION['user']['address'] = $data['address'];
+
+                    }else{
                     $_SESSION['error'] = 'Ошибка!';
                 }
             }
