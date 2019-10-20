@@ -1,5 +1,5 @@
-a:2:{s:4:"data";s:2194:"<li class="dropdown menu-item">
-                    <a href="category/men" class=" dropdown-toggle" data-toggle="dropdown">Men</a>
+a:2:{s:4:"data";s:2170:"<li class="dropdown menu-item">
+                    <a href="category/men" class=" dropdown-toggle" data-toggle="">Men</a>
             <ul class="dropdown-menu mega-menu">
             <li class="yamm-content">
                 <div class="row">
@@ -37,7 +37,7 @@ a:2:{s:4:"data";s:2194:"<li class="dropdown menu-item">
 
 
 <li class="dropdown menu-item">
-                    <a href="category/women" class=" dropdown-toggle" data-toggle="dropdown">Women</a>
+                    <a href="category/women" class=" dropdown-toggle" data-toggle="">Women</a>
             <ul class="dropdown-menu mega-menu">
             <li class="yamm-content">
                 <div class="row">
@@ -69,11 +69,11 @@ a:2:{s:4:"data";s:2194:"<li class="dropdown menu-item">
 
 
 <li class="dropdown menu-item">
-            <a href="category/kids" class=" " data-toggle="dropdown">Kids</a>
+            <a href="category/kids" class=" " data-toggle="">Kids</a>
     </li><!-- /.menu-item -->
 
 
 
 
 
-";s:8:"end_time";i:1571573588;}
+";s:8:"end_time";i:1571584153;}

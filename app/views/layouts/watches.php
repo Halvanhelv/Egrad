@@ -639,21 +639,28 @@
 <script src="assets/js/validator.min.js"></script>
 
 
-<script>
-    $( function() {
-
-        $( "#search" ).autocomplete({
-
-            source:   "http://govno/search/typeahead",
-            minLength: 3,
-            select: function( event, ui ) {
-                console.log(ui.id);
-                window.location =  'http://govno/product/' + encodeURIComponent(ui.item.id);
-            }
-        });
-    } );
-</script>
-
+    <script>
+        $( function() {
+    
+            $( "#search" ).autocomplete({
+    
+                source:   "http://govno/search/typeahead",
+                minLength: 3,
+                select: function( event, ui ) {
+                    console.log(ui.id);
+                    window.location =  'http://govno/product/' + encodeURIComponent(ui.item.id);
+                }
+            });
+        } );
+    </script>
+    <script>$(function(){
+            $('.dropdown').hover(function() {
+                    $(this).addClass('open');
+                },
+                function() {
+                    $(this).removeClass('open');
+                });
+        });</script>
 
 </body>
 </html>

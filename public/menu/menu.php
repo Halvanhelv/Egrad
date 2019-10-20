@@ -3,7 +3,7 @@
         <?php $child = 'dropdown-toggle' ?>
     <?php else: $child = ''   ?>
     <?php endif; ?>
-    <a href="category/<?=$category['alias'];?>" class=" <?=$child?>" data-toggle="dropdown"><?=$category['title'];?></a>
+    <a href="category/<?=$category['alias'];?>" class=" <?=$child?>" data-toggle=""><?=$category['title'];?></a>
     <?php if(isset($category['childs'])): ?>
         <ul class="dropdown-menu mega-menu">
             <li class="yamm-content">
