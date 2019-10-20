@@ -9,8 +9,8 @@
 
     <base href="/">
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
+    <link rel="stylesheet"  type="text/css" href="assets/css/bootstrap.min.css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Customizable CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/colors/orange.css">
@@ -40,6 +40,8 @@
 </head>
 
 <body>
+
+
 <div class="wrapper">
     <!-- ============================================================= TOP NAVIGATION ============================================================= -->
     <nav class="top-bar animate-dropdown">
@@ -616,7 +618,7 @@
 <script src="js/jquery.js"></script>
 <script src="assets/js/jquery-migrate-1.2.1.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="//maps.google.com/maps/api/js?key=AIzaSyDDZJO4F0d17RnFoi1F2qtw4wn6Wcaqxao&sensor=false&amp;language=en"></script>
+
 <script src="assets/js/gmap3.min.js"></script>
 <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
@@ -630,10 +632,12 @@
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/buttons.js"></script>
 <script src="assets/js/scripts.js"></script>
-<script src="js/validator.js"></script>
+
 <script src="js/main.js"></script>
 
 <script src="js/jquery-ui.min.js"></script>
+<script src="assets/js/validator.min.js"></script>
+
 
 <script>
     $( function() {

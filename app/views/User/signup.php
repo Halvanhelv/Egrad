@@ -63,30 +63,30 @@
                     <p>Create your own Media Center account</p>
 
                     <form role="form" class="register-form cf-style-1" method="post" action="user/signup" id="signup"  data-toggle="validator">
-                        <div class="field-row has-feedback">
+                        <div class="field-row has-feedback form-group ">
                             <label for="login">Login</label>
                             <input   type="text" name="login" class=" le-input" id ="login" placeholder="Login" value="<?=isset($_SESSION['form_data']['login']) ? h($_SESSION['form_data']['login']) : '';?>" required>
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                         </div>
-                        <div class="field-row has-feedback">
+                        <div class="field-row has-feedback form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="le-input  " id="password" placeholder="Password" data-error="Пароль должен включать не менее 6 символов" data-minlength="6" value="<?=isset($_SESSION['form_data']['password']) ? h($_SESSION['form_data']['password']) : '';?>" required>
+                            <input type="password" name="password" class="le-input form-control " id="password" placeholder="Password" data-error="Пароль должен включать не менее 6 символов" data-minlength="6" value="<?=isset($_SESSION['form_data']['password']) ? h($_SESSION['form_data']['password']) : '';?>" required>
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <div class="field-row has-feedback">
+                        <div class="field-row has-feedback form-group">
                             <label for="name">Имя</label>
                             <input type="text" name="name" class="le-input" id="name" placeholder="Имя" value="<?=isset($_SESSION['form_data']['name']) ? h($_SESSION['form_data']['name']) : '';?>" required>
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
                         </div>
-                        <div class="field-row has-feedback">
+                        <div class="field-row has-feedback form-group">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="le-input" id="email" placeholder="Email" value="<?=isset($_SESSION['form_data']['email']) ? h($_SESSION['form_data']['email']) : '';?>" required>
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
                         </div>
-                        <div class="field-row has-feedback">
+                        <div class="field-row has-feedback form-group">
                             <label for="address">Address</label>
                             <input type="text" name="address" class="le-input" id="address" placeholder="Address" value="<?=isset($_SESSION['form_data']['address']) ? h($_SESSION['form_data']['address']) : '';?>" required>
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
@@ -97,6 +97,7 @@
                             <button type="submit" class="le-button huge">Зарегистрировать</button>
                         </div><!-- /.buttons-holder -->
                     </form>
+
                     <?php if(isset($_SESSION['form_data'])) unset($_SESSION['form_data']); ?>
                     <h2 class="semi-bold">Sign up today and you'll be able to :</h2>
 
@@ -113,4 +114,3 @@
         </div><!-- /.row -->
     </div><!-- /.container -->
 </main>
-<script>$('#signup').validator()</script>
