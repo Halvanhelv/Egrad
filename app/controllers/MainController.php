@@ -9,7 +9,7 @@ class MainController extends AppController {
 
     public function indexAction(){
         $brands = \R::find('brand', 'LIMIT 3');
-        $hits = \R::find('product', "hit = '1' AND status = '1' LIMIT 6");
+        $hits = \R::find('product', "hit = 'on' AND status = 'on' LIMIT 6");
 
         // запись в куки запрошенного товара
         $p_model = new Product();

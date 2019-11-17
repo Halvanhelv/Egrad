@@ -147,7 +147,7 @@
                             <path d="M404.75 94.4062H441.344V97.5938H404.75V94.4062Z" fill="white"/>
                         </svg>
 
-
+                    </a>
 
 
                 </div><!-- /.logo -->
@@ -651,4 +651,11 @@
         });</script>
 
 </body>
+<?php
+$logs = \R::getDatabaseAdapter()
+    ->getDatabase()
+    ->getLogger();
+
+debug( $logs->grep( 'SELECT' ) );
+?>
 </html>

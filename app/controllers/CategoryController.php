@@ -37,15 +37,15 @@ class   CategoryController extends AppController {
             $filter = Filter::getFilter();
             if($filter){
                 $cnt = Filter::getCountGroups($filter);
-                $sql_part = "AND id IN (SELECT product_id FROM attribute_product WHERE attr_id IN ($filter) GROUP BY product_id HAVING COUNT(product_id) = $cnt)";
+                $sql_part = "AND id IN (SELECT product_id FROM attribute_product WHERE attr_id IN ($filter)  GROUP BY product_id HAVING COUNT(product_id) = $cnt)";
             }
         }
 
-        $total = \R::count('product', "category_id IN ($ids) $sql_part");
+        $total = \R::count('product', "WHERE status = 'on' AND category_id IN ($ids) $sql_part");
         $pagination = new Pagination($page, $perpage, $total);
         $start = $pagination->getStart();
 
-        $products = \R::find('product', "category_id IN ($ids) $sql_part LIMIT $start, $perpage");
+        $products = \R::find('product', " WHERE status = 'on' AND category_id IN ($ids) $sql_part  LIMIT $start, $perpage");
 
         if($this->isAjax()){
             $this->loadView('filter', compact('products', 'total', 'pagination'));

@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-    <div class="animate-dropdown">
+<div class="animate-dropdown">
         <!-- ========================================= BREADCRUMB ========================================= -->
         <div id="top-mega-nav">
             <div class="container">
