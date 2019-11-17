@@ -59,7 +59,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                         <?php foreach($gallery as $item): ?>
                             <div class="single-product-gallery-item" id="slideimages/<?=$item->img;?>">
                                 <a data-rel="prettyphoto" href="">
-                                    <img class="img-responsive" alt="" style="max-width:433px; max-height:325px; vertical-align: middle; " src="assets/images/blank.gif" data-echo="images/<?=$item->img;?>" />
+                                    <img class="img-responsive" alt="" style="max-width:433px; max-height:325px;" src="assets/images/blank.gif" data-echo="images/<?=$item->img;?>" />
                                 </a>
                             </div><!-- /.single-product-gallery-item -->
                         <?php endforeach; ?>
@@ -67,7 +67,8 @@ $cats = \ishop\App::$app->getProperty('cats');
 
                         <!-- /.single-product-gallery-item -->
                     </div><!-- /.single-product-slider -->
-
+                    <style> .
+                        }</style>
 
                     <div class="single-product-gallery-thumbs gallery-thumbs">
 
