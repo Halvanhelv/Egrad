@@ -59,7 +59,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                         <?php foreach($gallery as $item): ?>
                             <div class="single-product-gallery-item" id="slideimages/<?=$item->img;?>">
                                 <a data-rel="prettyphoto" href="">
-                                    <img class="img-responsive" alt="" style="max-width:433px; max-height:325px;" src="assets/images/blank.gif" data-echo="images/<?=$item->img;?>" />
+                                    <img class="img-responsive" alt="" style="max-height: 320px; margin: 0 auto"  src="assets/images/blank.gif" data-echo="images/<?=$item->img;?>" />
                                 </a>
                             </div><!-- /.single-product-gallery-item -->
                         <?php endforeach; ?>
@@ -67,15 +67,14 @@ $cats = \ishop\App::$app->getProperty('cats');
 
                         <!-- /.single-product-gallery-item -->
                     </div><!-- /.single-product-slider -->
-                    <style> .
-                        }</style>
+
 
                     <div class="single-product-gallery-thumbs gallery-thumbs">
 
                         <div id="owl-single-product-thumbnails" class="owl-carousel">
                             <?php foreach($gallery as $item): ?>
                                 <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="<?php echo $item['id']-1; ?>" href="#slideimages/<?=$item->img;?>">
-                                    <img width="67" alt="" src="iassets/images/blank.gif" data-echo="images/<?=$item->img;?>" />
+                                    <img  src="iassets/images/blank.gif" style="max-height: 36px; width: auto; margin: 0 auto"   data-echo="images/<?=$item->img;?>" />
                                 </a>
                             <?php endforeach; ?>
 
@@ -102,7 +101,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                     <div id="owl-single-product" class="owl-carousel">
                         <div class="single-product-gallery-item  "  id="slide1">
                             <a data-rel="prettyphoto" >
-                                <img class="img-responsive"  style="max-width:433px; max-height:325px;" alt=""src="assets/images/blank.gif" data-echo="images/<?=$product->img;?>" />
+                                <img class="img-responsive"  style="max-width: 320px " alt=""src="assets/images/blank.gif" data-echo="images/<?=$product->img;?>" />
                             </a>
                         </div><!-- /.single-product-gallery-item -->
                         <!-- /.single-product-gallery-item -->
@@ -414,7 +413,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                                 <div class="ribbon red"><span>sale</span></div>
                                 <div class="image">
                                     <a href="product/<?=$item['alias'];?>">
-                                        <img alt="" src="assets/images/blank.gif" style="max-height: 143px" data-echo="images/<?=$item['img'];?>" />
+                                        <img alt="" src="assets/images/blank.gif" style="max-height: 320px" data-echo="images/<?=$item['img'];?>" />
                                     </a>
                                 </div>
                                 <div class="body">
@@ -473,7 +472,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                                 <div class="ribbon red"><span>sale</span></div>
                                 <div class="image">
                                     <a href="product/<?=$item['alias'];?>">
-                                        <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px" data-echo="images/<?=$item['img'];?>" />
+                                        <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 320px" data-echo="images/<?=$item['img'];?>" />
                                     </a>
                                 </div>
                                 <div class="body">

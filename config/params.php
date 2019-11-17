@@ -9,9 +9,9 @@ return [
     'smtp_protocol' => 'ssl',
     'smtp_login' => 'islamgagiev69@gmail.com',
     'smtp_password' => 'Bercouli_synthesis_one_69',
-    'img_width' => 125,
-    'img_height' => 200,
-    'gallery_width' => 700,
-    'gallery_height' => 1000,
+    'img_width' => 320,
+    'img_height' => 320,
+    'gallery_width' => 320,
+    'gallery_height' => 320,
 
 ];

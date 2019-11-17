@@ -2434,7 +2434,7 @@ header {
 #single-product .single-product-gallery-item {
   padding-bottom: 40px; }
   #single-product .single-product-gallery-item img {
-    width: 425px; }
+    max-width: 425px; }
 #single-product .product-item-holder {
   border: none; }
   #single-product .product-item-holder .owl-wrapper-outer, #single-product .product-item-holder .owl-stage-outer {
