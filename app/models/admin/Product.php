@@ -17,6 +17,7 @@ class Product extends AppModel {
         'status' => '',
         'hit' => '',
         'alias' => '',
+        'brand_id' =>'',
     ];
 
     public $rules = [
@@ -29,7 +30,60 @@ class Product extends AppModel {
             ['category_id'],
         ],
     ];
+    public function detail($id,$data)
+    {
+        $detail = \R::getAssoc("SELECT  attribute_id, attr_value FROM product_detail JOIN detail ON product_detail.attribute_id = detail.detail_id WHERE product_detail.product_id = ?", [$id]);
 
+        $tmp = [];
+
+        foreach ($data['detail'] as $key => $value) {
+            foreach ($data['detail_attrs'] as $k => $v)
+            {
+
+                if($key == $k )
+                {
+                    $tmp[$value] = $v;
+                }
+            }
+
+        }
+        $sql_part = '';
+        foreach($tmp as $v => $k){
+            $v = (int)$v;
+            $k =(string)$k;
+            $sql_part .= "($id, $v,'$k'),";
+        }
+        $sql_part = rtrim($sql_part, ',');
+        // если добавляется характеристика товара
+        if(empty($detail) && !empty($data['detail']))
+        {
+            \R::exec("INSERT INTO product_detail (product_id, attribute_id,attr_value) VALUES $sql_part");
+            return;
+        }
+
+
+        // если менеджер убрал характеристику товара
+        if(empty($data['detail']) && !empty($detail)) {
+
+
+            \R::exec("DELETE FROM product_detail WHERE product_id = ?", [$id]);
+
+            return;
+        }
+        // если изменились характеристики    - удалим и запишем новые
+
+        if(!empty($data['detail']))
+        {
+
+            $result = array_diff($tmp, $detail);
+            if (!empty($result) || count($tmp) != count($detail)) {
+                \R::exec("DELETE FROM product_detail WHERE product_id = ?", [$id]);
+
+                \R::exec("INSERT INTO product_detail (product_id, attribute_id,attr_value) VALUES $sql_part");
+                return;
+            }
+        }
+    }
     public function editRelatedProduct($id, $data){
         $related_product = \R::getCol('SELECT related_id FROM related_product WHERE product_id = ?', [$id]);
         // если менеджер убрал связанные товары - удаляем их
@@ -60,17 +114,22 @@ class Product extends AppModel {
                 }
                 $sql_part = rtrim($sql_part, ',');
                 \R::exec("INSERT INTO related_product (product_id, related_id) VALUES $sql_part");
+
             }
         }
     }
 
     public function editFilter($id, $data){
+
         $filter = \R::getCol('SELECT attr_id FROM attribute_product WHERE product_id = ?', [$id]);
         // если менеджер убрал фильтры - удаляем их
         if(empty($data['attrs']) && !empty($filter)){
             \R::exec("DELETE FROM attribute_product WHERE product_id = ?", [$id]);
+
             return;
+
         }
+
         // если фильтры добавляются
         if(empty($filter) && !empty($data['attrs'])){
             $sql_part = '';
@@ -83,6 +142,7 @@ class Product extends AppModel {
         }
         // если изменились фильтры - удалим и запишем новые
         if(!empty($data['attrs'])){
+
             $result = array_diff($filter, $data['attrs']);
             if(!$result || count($filter) != count($data['attrs'])){
                 \R::exec("DELETE FROM attribute_product WHERE product_id = ?", [$id]);
@@ -91,6 +151,7 @@ class Product extends AppModel {
                     $sql_part .= "($v, $id),";
                 }
                 $sql_part = rtrim($sql_part, ',');
+
                 \R::exec("INSERT INTO attribute_product (attr_id, product_id) VALUES $sql_part");
             }
         }
@@ -134,7 +195,7 @@ class Product extends AppModel {
         $new_name = md5(time()).".$ext";
 
         $uploadfile = $uploaddir.$new_name;
-        
+
         if(@move_uploaded_file($_FILES[$name]['tmp_name'], $uploadfile)){
 
             if($name == 'single'){
@@ -199,5 +260,4 @@ class Product extends AppModel {
         }
         imagedestroy($newImg);
     }
-
 }

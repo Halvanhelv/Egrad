@@ -89,6 +89,31 @@
                         </div>
 
                         <?php new \app\widgets\filter\Filter($filter, WWW . '/filter/admin_filter_tpl.php'); ?>
+                        <?php if (!empty($detail)): ?>
+                            <div class="container-fluid">
+                                <div class="col-md-1  "><button type="button" class=" add_attr btn btn-block btn-success">+</button></div>
+                                <div class="col-md-1 "><button type="button" class="btn btn-block btn-danger">-</button></div>
+                            </div>
+
+                        <div class="container-fluid attr_block " >
+                            <?php foreach ($detail as $item): ?>
+                            <div class="form-group col-md-6  ">
+                                <label for="detail">Атрибут</label>
+                                <select name="detail[]"   class="form-control select3">
+                                    <option value="<?php echo $item['attribute_id'] ?>" selected="selected"><?php echo $item['detail_name'] ?></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Значение</label>
+                                <input type="text" name="detail_attrs[]" value="<?php echo $item['attr_value']?>" class="form-control" placeholder="Введите значение ..." autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+
+                            </div>
+                            <?php endforeach; ?>
+                            </div>
+
+
+                        <?php endif;?>
+
                         <div class="form-group">
                             <div class="col-md-4">
                                 <div class="box box-danger box-solid file-upload">

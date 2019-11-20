@@ -4910,3 +4910,195 @@
 =================
 [2019-11-18 02:00:15] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
 =================
+[2019-11-18 07:30:02] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-18 07:30:02] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-18 09:19:52] Текст ошибки: syntax error, unexpected ';', expecting ')' | Файл: D:\Documents\OSPanel\domains\ssss\app\controllers\admin\ProductController.php | Строка: 113
+=================
+[2019-11-18 09:57:56] Текст ошибки: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 09:58:09] Текст ошибки: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 09:58:12] Текст ошибки: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 09:58:14] Текст ошибки: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 09:58:27] Текст ошибки: syntax error, unexpected 'public' (T_PUBLIC) | Файл: D:\Documents\OSPanel\domains\ssss\app\models\admin\Product.php | Строка: 48
+=================
+[2019-11-18 10:03:29] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:05:31] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:06:06] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:07:10] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:07:15] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:07:30] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:09:24] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:09:55] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:10:07] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:10:24] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:11:17] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'дюйм' in 'field list' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:12:19] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:12:31] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:12:34] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:12:42] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:17:55] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'дюйма)' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:21:33] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column '44дюйма' in 'field list' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:22:26] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column '44дюйма' in 'field list' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:23:13] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column '44дюйма' in 'field list' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 10:23:16] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column '44дюйма' in 'field list' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-18 11:27:57] Текст ошибки: syntax error, unexpected ')' | Файл: D:\Documents\OSPanel\domains\ssss\app\models\admin\Product.php | Строка: 39
+=================
+[2019-11-18 11:28:49] Текст ошибки: syntax error, unexpected '=', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) | Файл: D:\Documents\OSPanel\domains\ssss\app\models\admin\Product.php | Строка: 39
+=================
+[2019-11-18 11:44:21] Текст ошибки: Class 'app\models\admin\Product' not found | Файл: D:\Documents\OSPanel\domains\ssss\app\controllers\admin\ProductController.php | Строка: 84
+=================
+[2019-11-18 12:09:06] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-18 12:09:06] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-18 14:06:49] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM product_detail JOIN detail ON product_detail.attribute_id = detail.detail_i' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-19 01:39:55] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 656
+=================
+[2019-11-19 01:51:44] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:51:44] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:51:51] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:53:26] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:54:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:54:43] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:55:56] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 01:55:56] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 02:00:13] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 02:00:13] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 05:28:22] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 05:28:22] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-19 09:08:48] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(249, 1,'7 дюймов'),(249, 2,'180 грамм')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 07:56:48] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'228'),(255, 2,'322')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 07:58:13] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'321'),(255, 2,'123')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:05:29] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'321'),(255, 2,'123')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:06:49] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'321'),(255, 2,'123')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:08:40] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'1488'),(255, 2,'324')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:13:57] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'33'),(255, 2,'34')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:14:43] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'332'),(255, 2,'342')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:15:38] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'иди'),(255, 2,'нахуй')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:16:11] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'пошел'),(255, 2,'сам')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:17:51] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'путин'),(255, 2,'хуйло')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:21:55] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'хуй'),(255, 2,'соси')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:27:19] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'qwe'),(255, 2,'asd')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:43:27] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'qwed'),(255, 2,'asdd')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 08:57:10] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 0,'asdd')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:09:16] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 0,'нахуй')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:31:47] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'я ебу'),(255, 2,'собак'),(255, 3,'Есть'),(255, 4,'Да')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:32:21] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(255, 1,'я ебу'),(255, 2,'собак'),(255, 3,'Есть'),(255, 4,'Да')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:33:03] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:33:57] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:34:10] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:34:49] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:35:18] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:35:20] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:36:11] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(262, 1,'1433'),(262, 3,'да')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:36:46] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(263, 1,'1433'),(263, 3,'да')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:37:10] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(264, 1,'1433'),(264, 3,'да')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:44:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-20 09:48:24] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'1433'),(265, 3,'да')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:57:13] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'привет'),(265, 3,'Пока')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:57:33] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'привет'),(265, 3,'Пока')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:58:13] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'соси'),(265, 3,'Жопу')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 09:59:19] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'Сам'),(265, 3,'Соси')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:05:18] Текст ошибки: syntax error, unexpected ';' | Файл: D:\Documents\OSPanel\domains\ssss\app\models\admin\Product.php | Строка: 84
+=================
+[2019-11-20 10:05:44] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'не'),(265, 3,'Буду')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:09:03] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'Соси'),(265, 3,'Жопу')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:13:18] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'Привет'),(265, 3,'Пока')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:19:08] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'Ноль'),(265, 3,'Один')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:22:27] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'Пять'),(265, 3,'Шесть')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:23:07] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'Семь'),(265, 3,'Восемь')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-20 10:24:05] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(265, 1,'ооо'),(265, 3,'ddd')' at line 1 | Файл: D:\Documents\OSPanel\domains\ssss\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================

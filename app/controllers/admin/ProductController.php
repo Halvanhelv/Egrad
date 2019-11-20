@@ -19,6 +19,10 @@ class ProductController extends AppController {
         $this->setMeta('Список товаров');
         $this->set(compact('products', 'pagination', 'count'));
     }
+    public function deleteAction()
+    {
+
+    }
 
     public function addImageAction(){
         if(isset($_GET['upload'])){
@@ -54,12 +58,17 @@ class ProductController extends AppController {
             }
             if($product->update('product', $id)){
                 $product->editFilter($id, $data);
+                $product->detail($id,$data);
                 $product->editRelatedProduct($id, $data);
                 $product->saveGallery($id);
                 $alias = AppModel::createAlias('product', 'alias', $data['title'], $id);
                 $product = \R::load('product', $id);
                 $product->alias = $alias;
+
                 \R::store($product);
+
+
+
                 $_SESSION['success'] = 'Изменения сохранены';
                 redirect();
             }
@@ -71,8 +80,11 @@ class ProductController extends AppController {
         $filter = \R::getCol('SELECT attr_id FROM attribute_product WHERE product_id = ?', [$id]);
         $related_product = \R::getAll("SELECT related_product.related_id, product.title FROM related_product JOIN product ON product.id = related_product.related_id WHERE related_product.product_id = ?", [$id]);
         $gallery = \R::getCol('SELECT img FROM gallery WHERE product_id = ?', [$id]);
+        $detail = \R::getAll("SELECT * FROM product_detail JOIN detail ON product_detail.attribute_id = detail.detail_id WHERE product_detail.product_id = ?", [$id]);
+
         $this->setMeta("Редактирование товара {$product->title}");
-        $this->set(compact('product', 'filter', 'related_product', 'gallery'));
+
+        $this->set(compact('product', 'filter', 'related_product', 'gallery','detail'));
     }
 
     public function addAction(){
@@ -86,7 +98,7 @@ class ProductController extends AppController {
             $product->attributes['brand_id'] = $product->attributes['brand_id'] ? $product->attributes['brand_id'] : '0';
 
 
-            debug($product->attributes);
+
             $product->getImg();
 
             if(!$product->validate($data)){
@@ -103,6 +115,11 @@ class ProductController extends AppController {
                 \R::store($p);
                 $product->editFilter($id, $data);
                 $product->editRelatedProduct($id, $data);
+    debug($data);
+                $product->detail($id,$data);
+
+
+
                 $_SESSION['success'] = 'Товар добавлен';
             }
             redirect();
@@ -128,6 +145,34 @@ class ProductController extends AppController {
         $q = isset($_GET['q']) ? $_GET['q'] : '';
         $data['items'] = [];
         $products = \R::getAssoc('SELECT id, title FROM product WHERE title LIKE ? LIMIT 10', ["%{$q}%"]);
+        if($products){
+            $i = 0;
+            foreach($products as $id => $title){
+                $data['items'][$i]['id'] = $id;
+                $data['items'][$i]['text'] = $title;
+                $i++;
+            }
+        }
+        echo json_encode($data);
+        die;
+    }
+    public function detailProductAction(){
+        /*$data = [
+            'items' => [
+                [
+                    'id' => 1,
+                    'text' => 'Товар 1',
+                ],
+                [
+                    'id' => 2,
+                    'text' => 'Товар 2',
+                ],
+            ]
+        ];*/
+
+        $q = isset($_GET['q']) ? $_GET['q'] : '';
+        $data['items'] = [];
+        $products = \R::getAssoc('SELECT detail_id, detail_name FROM detail WHERE detail_name LIKE ? LIMIT 10', ["%{$q}%"]);
         if($products){
             $i = 0;
             foreach($products as $id => $title){

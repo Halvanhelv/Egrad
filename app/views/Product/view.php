@@ -198,29 +198,15 @@ $cats = \ishop\App::$app->getProperty('cats');
 
                     </div><!-- /.meta-row -->
                 </div><!-- /.tab-pane #description -->
-
+             <?php if ($detail): ?>
                 <div class="tab-pane" id="additional-info">
                     <ul class="tabled-data">
+                        <?php foreach($detail as $k): ?>
                         <li>
-                            <label>weight</label>
-                            <div class="value">7.25 kg</div>
+                            <label><?php echo $k['detail_name']?></label>
+                            <div class="value"><?php echo $k['attr_value']?></div>
                         </li>
-                        <li>
-                            <label>dimensions</label>
-                            <div class="value">90x60x90 cm</div>
-                        </li>
-                        <li>
-                            <label>size</label>
-                            <div class="value">one size fits all</div>
-                        </li>
-                        <li>
-                            <label>color</label>
-                            <div class="value">white</div>
-                        </li>
-                        <li>
-                            <label>guarantee</label>
-                            <div class="value">5 years</div>
-                        </li>
+                      <?php endforeach; ?>
                     </ul><!-- /.tabled-data -->
 
                     <div class="meta-row">
@@ -249,7 +235,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                     </div><!-- /.meta-row -->
                 </div><!-- /.tab-pane #additional-info -->
 
-
+      <?php endif; ?>
                 <div class="tab-pane" id="reviews">
                     <div class="comments">
                         <div class="comment-item">
