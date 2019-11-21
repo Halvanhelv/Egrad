@@ -34,7 +34,7 @@ class ProductController extends AppController {
         // галерея
         $gallery = \R::findAll('gallery', 'product_id = ?', [$product->id]);
         //характеристика товара
-        $detail = \R::getAll("SELECT attr_value, detail_name FROM product_detail JOIN detail ON product_detail.attribute_id = detail.detail_id WHERE product_detail.product_id = ?", [$product->id]);
+        $detail = \R::getAll("SELECT attr_value, detail_name FROM product_detail JOIN detail ON product_detail.attribute_id = detail.id WHERE product_detail.product_id = ?", [$product->id]);
 
             // модификации
         $mods = \R::findAll('modification', 'product_id = ?', [$product->id]);

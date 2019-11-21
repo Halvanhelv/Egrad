@@ -80,7 +80,7 @@ class ProductController extends AppController {
         $filter = \R::getCol('SELECT attr_id FROM attribute_product WHERE product_id = ?', [$id]);
         $related_product = \R::getAll("SELECT related_product.related_id, product.title FROM related_product JOIN product ON product.id = related_product.related_id WHERE related_product.product_id = ?", [$id]);
         $gallery = \R::getCol('SELECT img FROM gallery WHERE product_id = ?', [$id]);
-        $detail = \R::getAll("SELECT * FROM product_detail JOIN detail ON product_detail.attribute_id = detail.detail_id WHERE product_detail.product_id = ?", [$id]);
+        $detail = \R::getAll("SELECT * FROM product_detail JOIN detail ON product_detail.attribute_id = detail.id WHERE product_detail.product_id = ?", [$id]);
 
         $this->setMeta("Редактирование товара {$product->title}");
 
@@ -172,7 +172,7 @@ class ProductController extends AppController {
 
         $q = isset($_GET['q']) ? $_GET['q'] : '';
         $data['items'] = [];
-        $products = \R::getAssoc('SELECT detail_id, detail_name FROM detail WHERE detail_name LIKE ? LIMIT 10', ["%{$q}%"]);
+        $products = \R::getAssoc('SELECT id, detail_name FROM detail WHERE detail_name LIKE ? LIMIT 10', ["%{$q}%"]);
         if($products){
             $i = 0;
             foreach($products as $id => $title){

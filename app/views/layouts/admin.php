@@ -324,6 +324,17 @@
                     </ul>
                 </li>
                 <li class="treeview">
+                    <a href="#"><i class="fa fa-navicon"></i> <span>Характеристики товара</span>
+                        <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="<?= ADMIN ?>/detail">Список характеристик</a></li>
+                        <li><a href="<?= ADMIN ?>/detail/add">Добавить характеристику</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="#"><i class="fa fa-cubes"></i> <span>Товары</span>
                         <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>

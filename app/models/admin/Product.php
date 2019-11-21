@@ -32,7 +32,7 @@ class Product extends AppModel {
     ];
     public function detail($id,$data)
     {
-        $detail = \R::getAssoc("SELECT  attribute_id, attr_value FROM product_detail JOIN detail ON product_detail.attribute_id = detail.detail_id WHERE product_detail.product_id = ?", [$id]);
+        $detail = \R::getAssoc("SELECT  attribute_id, attr_value FROM product_detail JOIN detail ON product_detail.attribute_id = detail.id WHERE product_detail.product_id = ?", [$id]);
 
         $tmp = [];
 
