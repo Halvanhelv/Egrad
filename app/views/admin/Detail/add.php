@@ -19,7 +19,7 @@
                     <div class="box-body">
                         <div class="form-group has-feedback">
                             <label for="title">Наименование товара</label>
-                            <input type="text" name="detail_name" class="form-control" id="detail_name" placeholder="Наименование товара" value="<?php isset($_SESSION['form_data']['detail_name']) ? h($_SESSION['form_data']['detail_name']) : null; ?>" required>
+                            <input required type="text" name="detail_name" class="form-control" id="detail_name" placeholder="Наименование товара" value="<?php isset($_SESSION['form_data']['detail_name']) ? h($_SESSION['form_data']['detail_name']) : null; ?>" >
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                         </div>
                         <div class="box-footer">
