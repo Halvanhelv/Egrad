@@ -24,7 +24,28 @@ class DetailController extends AppController
         $this->set(compact('detail', 'pagination', 'count'));
     }
 
+public function addAction()
+{
+    if(!empty($_POST))
+    {
 
+        $detail = new Detail();
+        $data = $_POST;
+        $detail->load($data);
+
+        if(!$detail->validate($data)){
+            $detail->getErrors();
+            $_SESSION['form_data'] = $data;
+            redirect();
+        }
+$detail->save('detail');
+        $_SESSION['success'] = 'Товар добавлен';
+        redirect();
+
+    }
+
+
+}
     public function editAction(){
         if(!empty($_POST)){
 

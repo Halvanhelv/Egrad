@@ -89,13 +89,14 @@
                         </div>
 
                         <?php new \app\widgets\filter\Filter($filter, WWW . '/filter/admin_filter_tpl.php'); ?>
-                        <?php if (!empty($detail)): ?>
+
                             <div class="container-fluid">
                                 <div class="col-md-1  "><button type="button" class=" add_attr btn btn-block btn-success">+</button></div>
                                 <div class="col-md-1 "><button type="button" class="btn btn-block btn-danger">-</button></div>
                             </div>
 
                         <div class="container-fluid attr_block " >
+                            <?php if (!empty($detail)): ?>
                             <?php foreach ($detail as $item): ?>
                             <div class="form-group col-md-6  ">
                                 <label for="detail">Атрибут</label>
@@ -109,10 +110,11 @@
 
                             </div>
                             <?php endforeach; ?>
+                            <?php endif;?>
                             </div>
 
 
-                        <?php endif;?>
+
 
                         <div class="form-group">
                             <div class="col-md-4">

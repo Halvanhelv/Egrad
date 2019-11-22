@@ -324,7 +324,7 @@
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="#"><i class="fa fa-navicon"></i> <span>Характеристики товара</span>
+                    <a href="#"><i class="glyphicon glyphicon-th-large"></i> <span>Характеристики товара</span>
                         <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>

@@ -10,5 +10,11 @@ class Detail extends AppModel
         'detail_name' => '',
 
     ];
+    public $rules = [
+        'required' => [
+            ['detail_name'],
+        ],
+
+    ];
 
 }

@@ -122,7 +122,7 @@ class ProductController extends AppController {
 
                 $_SESSION['success'] = 'Товар добавлен';
             }
-            redirect();
+                redirect();
         }
 
         $this->setMeta('Новый товар');
