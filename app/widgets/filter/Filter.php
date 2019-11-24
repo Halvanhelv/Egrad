@@ -2,32 +2,42 @@
 
 namespace app\widgets\filter;
 
+use app\controllers\AppController;
+use app\models\Category;
+use ishop\base\Model;
 use ishop\Cache;
 
-class Filter{
+class Filter  {
 
     public $groups;
     public $attrs;
     public $tpl;
     public $filter;
+    public static $ids;
 
     public function __construct($filter = null, $tpl = ''){
         $this->filter = $filter;
         $this->tpl = $tpl ?: __DIR__ . '/filter_tpl.php';
+        $ids = new Category();
         $this->run();
     }
+    public static function ids($ids)
+    {
+        self::$ids = $ids;
+    }
+
 
     protected function run(){
         $cache = Cache::instance();
         $this->groups = $cache->get('filter_group');
         if(!$this->groups){
             $this->groups = $this->getGroups();
-            $cache->set('filter_group', $this->groups, 30);
+            $cache->set('filter_group' . self::$ids , $this->groups, 30);
         }
-        $this->attrs = $cache->get('filter_attrs');
+        $this->attrs = $cache->get('filter_attrs' .  self::$ids);
         if(!$this->attrs){
             $this->attrs = self::getAttrs();
-            $cache->set('filter_attrs', $this->attrs, 30);
+            $cache->set('filter_attrs' .self::$ids, $this->attrs, 30);
         }
         $filters = $this->getHtml();
         echo $filters;
@@ -48,11 +58,17 @@ class Filter{
     }
 
     protected static function getAttrs(){
-        $data = \R::getAssoc('SELECT * FROM attribute_value');
+        $ids = self::$ids;
+        $data = \R::getAll("SELECT value,attr_group_id,attr_id FROM product JOIN attribute_product ON product.id = attribute_product.product_id JOIN attribute_value ON attribute_product.attr_id = attribute_value.id WHERE category_id IN ($ids) GROUP BY value");
         $attrs = [];
+
+
         foreach($data as $k => $v){
-            $attrs[$v['attr_group_id']][$k] = $v['value'];
+            $attrs[$v['attr_group_id']][$v['attr_id']] = $v['value'];
+
         }
+
+
         return $attrs;
     }
 

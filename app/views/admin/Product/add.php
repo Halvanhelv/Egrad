@@ -78,7 +78,7 @@
                             <div class="col-md-1 "><button type="button" class="btn btn-block btn-danger">-</button></div>
                         </div>
                         <div class="container-fluid attr_block " >
-                            <div class="form-group col-md-6  ">
+                            <div class="form-group col-md-6  ">🐁
                                 <label for="detail">Атрибут</label>
                                 <select name="detail[]" class="form-control select3"></select>
                             </div>

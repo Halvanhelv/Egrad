@@ -22,6 +22,8 @@ class   CategoryController extends AppController {
         $cat_model = new Category();
         $ids = $cat_model->getIds($category->id);
         $ids = !$ids ? $category->id : $ids . $category->id;
+        Filter::ids($ids);
+
 
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
         $perpage = App::$app->getProperty('pagination');
