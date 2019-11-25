@@ -135,3 +135,20 @@ $('.available select').on('change', function(){
 });
 
 
+$(function(){
+
+    $('#forgot-link').click(function(){
+        $('#login').fadeOut(300, function(){
+            $('#forgot').fadeIn();
+        });
+        return false;
+    });
+
+    $('#auth-link').click(function(){
+        $('#forgot').fadeOut(300, function(){
+            $('#login').fadeIn();
+        });
+        return false;
+    });
+
+});

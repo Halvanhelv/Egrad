@@ -5364,3 +5364,181 @@
 =================
 [2019-11-21 16:15:18] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\ssss\vendor\ishop\core\Router.php | Строка: 39
 =================
+[2019-11-25 07:21:12] Текст ошибки: Нет соединения с БД | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Db.php | Строка: 14
+=================
+[2019-11-25 07:21:58] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 07:21:58] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 07:22:03] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 07:22:03] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 08:12:15] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 08:12:15] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:27:19] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:27:19] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:27:28] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:27:28] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:41:54] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:41:54] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:41:57] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:41:57] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:43:52] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:43:52] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:44:51] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:44:51] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:46:00] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:46:00] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 12:51:50] Текст ошибки: Метод app\controllers\UserController::forgotAction не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 33
+=================
+[2019-11-25 12:52:02] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 12:52:45] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 12:52:46] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 12:52:55] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:05:31] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:06:27] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:06:28] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:06:29] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:06:39] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:06:57] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 13:37:53] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 13:37:53] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 13:37:57] Текст ошибки: syntax error, unexpected '}' | Файл: D:\Documents\OSPanel\domains\govno\app\models\User.php | Строка: 90
+=================
+[2019-11-25 14:05:33] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:06:07] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:07:12] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:07:18] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:07:35] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:08:08] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:08:34] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:08:43] Текст ошибки: Too few arguments to function RedBeanPHP\Facade::load(), 1 passed in D:\Documents\OSPanel\domains\govno\app\models\User.php on line 85 and exactly 2 expected | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Facade.php | Строка: 526
+=================
+[2019-11-25 14:08:44] Текст ошибки: Too few arguments to function RedBeanPHP\Facade::load(), 1 passed in D:\Documents\OSPanel\domains\govno\app\models\User.php on line 85 and exactly 2 expected | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Facade.php | Строка: 526
+=================
+[2019-11-25 14:09:20] Текст ошибки: Too few arguments to function RedBeanPHP\Facade::load(), 1 passed in D:\Documents\OSPanel\domains\govno\app\models\User.php on line 85 and exactly 2 expected | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Facade.php | Строка: 526
+=================
+[2019-11-25 14:10:36] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:10:45] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:11:04] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:11:06] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:12:08] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:12:10] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:12:21] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:22:10] Текст ошибки: Class 'app\models\Swift_SmtpTransport' not found | Файл: D:\Documents\OSPanel\domains\govno\app\models\User.php | Строка: 97
+=================
+[2019-11-25 14:23:11] Текст ошибки: Class 'app\models\Swift_SmtpTransport' not found | Файл: D:\Documents\OSPanel\domains\govno\app\models\User.php | Строка: 97
+=================
+[2019-11-25 14:25:59] Текст ошибки: Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z17sm3737355ljm.16 - gsmtp
+" | Файл: D:\Documents\OSPanel\domains\govno\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php | Строка: 383
+=================
+[2019-11-25 14:26:27] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 14:26:27] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 14:26:39] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 14:27:57] Текст ошибки: Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a5sm3729247ljm.56 - gsmtp
+" | Файл: D:\Documents\OSPanel\domains\govno\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php | Строка: 383
+=================
+[2019-11-25 14:34:17] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:44:25] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:45:37] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:46:27] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 14:47:52] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 18:17:50] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:17:50] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:18:07] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:18:07] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:18:15] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:18:15] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:18:29] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:18:29] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:29:55] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:29:55] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 18:30:02] Текст ошибки: Метод app\controllers\UserController::recoveryAction не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 33
+=================
+[2019-11-25 18:37:28] Текст ошибки: Call to undefined method app\models\User::access_change() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:37:36] Текст ошибки: Call to undefined method app\models\User::access_change() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:37:37] Текст ошибки: Call to undefined method app\models\User::access_change() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:37:48] Текст ошибки: Call to undefined method app\models\User::access_change() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:37:51] Текст ошибки: Call to undefined method app\models\User::access_change() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:38:20] Текст ошибки: Call to undefined method app\models\User::recovery() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:38:21] Текст ошибки: Call to undefined method app\models\User::recovery() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 98
+=================
+[2019-11-25 18:39:28] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 18:39:29] Текст ошибки: На найден вид D:\Documents\OSPanel\domains\govno/app/views/User/forgot.php | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\base\View.php | Строка: 39
+=================
+[2019-11-25 18:59:50] Текст ошибки: Метод app\controllers\UserController::forgotAction не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 33
+=================
+[2019-11-25 19:07:31] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-25 19:07:31] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================

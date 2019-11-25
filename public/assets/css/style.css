@@ -3943,3 +3943,6 @@ select.top-drop-menu {
 }
  /* users*/
 
+#forgot{
+  display: none;
+}

@@ -87,5 +87,19 @@ class UserController extends AppController {
         $this->setMeta('История заказов');
         $this->set(compact('orders'));
     }
+   public function forgotAction()
+   {
+       $data = $_POST;
+       $user = new User();
+       if (isset($data['email'])) {
+           $user->forgot($data);
+           redirect();
+       } elseif (isset($_GET['forgot'])) {
 
+           $user->recovery();
+
+
+       }
+
+   }
 }

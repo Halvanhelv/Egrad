@@ -1,6 +1,11 @@
 <?php
 namespace app\models;
 
+use ishop\App;
+use Swift_Mailer;
+use Swift_Message;
+use Swift_SmtpTransport;
+
 class User extends AppModel {
 
     public $attributes = [
@@ -70,5 +75,82 @@ class User extends AppModel {
     public static function isAdmin(){
         return (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin');
     }
+    public function forgot($data)
+    {
+        if(empty($data['email']) ) {
+            $this->errors['error']['empty'] = 'Введите Email';
+        }
+        else
+        {
+            if($query = \R::findOne('user',"email = ?",[$data['email']]) && $query = \R::count('user','email = ?',[$data['email']]) == 1)
 
+            {
+                $expire = time() + 3600;
+                $hash = md5($expire . $data['email']);
+                $query = \R::dispense('forgot');
+                $query->email = $data['email'];
+                $query->hash = $hash;
+                $query->expire = $expire;
+                \R::store($query);
+                if (\R::count('forgot', 'email = ?', [$data['email']]) > 0) {
+
+                    $link = PATH . "/user/forgot/?forgot={$hash}";
+                    $_SESSION['forgot'] = $link;
+
+                    // Create the Transport
+                    $transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'), App::$app->getProperty('smtp_port'), App::$app->getProperty('smtp_protocol')))
+                        ->setUsername(App::$app->getProperty('smtp_login'))
+                        ->setPassword(App::$app->getProperty('smtp_password'))
+                    ;
+                    // Create the Mailer using your created Transport
+                    $mailer = new Swift_Mailer($transport);
+
+                    // Create a message
+                    ob_start();
+                    require APP . '/views/mail/pass_forgot.php';
+                    $body = ob_get_clean();
+
+
+                    $message_client = (new Swift_Message("Запрос на восстановление пароля на сайте" . App::$app->getProperty('shop_name')))
+                        ->setFrom([App::$app->getProperty('smtp_login') => App::$app->getProperty('shop_name')])
+                        ->setTo($data['email'])
+                        ->setBody($body, 'text/html')
+                    ;
+
+                    // Send the message
+                    $result = $mailer->send($message_client);
+
+
+                }
+
+            }
+
+
+        }
+        unset($data['email']);
+
+    }
+
+    public function recovery()
+    {
+        $hash = $_GET['forgot'];
+
+        if (empty($hash))
+        {
+            $_SESSION['error'] = 'Перейдите по корректной ссылке';
+            return;
+        }
+        $query = \R::findOne('forgot','hash = ?', [$hash]);
+        if (!$query)
+        {
+            $_SESSION['error'] = 'Ссылка устарела или вы перешли по некорректной ссылке. Пройдите процедуру восстановления пароля заново';
+            return;
+        }
+        $now = time();
+        if ($row = $query['expire'] - $now < 0)
+        {
+            $_SESSION['error'] = 'Ссылка устарела. Пройдите процедуру восстановления пароля заново';
+            return;
+        }
+    }
 }

@@ -90,7 +90,7 @@
                                             <label class="content-color"><input type="checkbox" class="le-checbox auto-width inline"> <span class="bold">Remember me</span></label>
                                         </span>
                                 <span class="pull-right">
-                                            <a href="#" class="content-color bold">Forgotten Password ?</a>
+                                            <a href="#" id="forgot-link" class="content-color bold">Забыли пароль ?</a>
                                         </span>
                             </div>
 
@@ -98,6 +98,32 @@
 
                                 <button type="submit" class="le-button huge">Вход</button>
                             </div><!-- /.buttons-holder -->
+                        </form><!-- /.cf-style-1 -->
+
+                        <form method="post" action="user/forgot" id="forgot" role="form" data-toggle="validator" class="login-form cf-style-1">
+
+
+                            <div class="field-row has-feedback form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="le-input" id="email" placeholder="Email" value="" data-error="Введите коректный Email" required>
+                                <div class="help-block with-errors"></div>
+                                <input type="hidden" value="Выслать пароль" name="fpass">
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+
+                            </div>
+
+                            <div class="field-row clearfix">
+
+                                <span class="pull-right">
+                                            <a href="#" id="auth-link" class="content-color bold">Войти</a>
+                                        </span>
+                                <div class="buttons-holder">
+
+                                    <button type="submit" class="le-button huge">Вход</button>
+                                </div><!-- /.buttons-holder -->
+                            </div>
+
+
                         </form><!-- /.cf-style-1 -->
 
                     </section><!-- /.sign-in -->
