@@ -65,14 +65,20 @@
                         </div>
                     </div>
 
+                        <?php if(isset($_SESSION['success'])): ?>
+                            <div class="alert alert-success">
+                                <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+                            </div>
+                        <?php endif; ?>
 
 
-                    <form method="post" action="user/recovery" id="recovery" role="form" data-toggle="validator" class="login-form cf-style-1">
+
+                    <form method="post" action="/user/forgot" id="recovery" role="form" data-toggle="validator" class="login-form cf-style-1">
 
 
                         <div class="field-row has-feedback">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" class="le-input" id="password" placeholder="Password" required>
+                            <label for="new_password">Password</label>
+                            <input type="password" name="new_password" class="le-input" id="new_password" placeholder="Password" required>
                             <input type="hidden" name="hash" value="<?=$_GET['forgot']?>" >
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                         </div><!-- /.field-row -->

@@ -100,6 +100,14 @@ class UserController extends AppController {
 
 
        }
+       elseif(isset($_POST['change_pass'])){
+           $user->change_forgot_password();
+           redirect(PATH . "/user/forgot/?forgot=" . $_POST['hash']);
+       }
+      else
+      {
+          redirect(PATH);
+      }
 
    }
 }

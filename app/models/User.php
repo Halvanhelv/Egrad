@@ -79,6 +79,7 @@ class User extends AppModel {
     {
         if(empty($data['email']) ) {
             $this->errors['error']['empty'] = 'Введите Email';
+            return;
         }
         else
         {
@@ -153,4 +154,29 @@ class User extends AppModel {
             return;
         }
     }
+    public function change_forgot_password()
+{
+    $data = $_POST;
+    $now = time();
+    if(empty($data['new_password']) ){
+        $_SESSION['error'] = "Не введен пароль";
+        return;
+    }
+    if(!$query =\R::findOne('forgot','hash = ?',[$data['hash']])) return;
+
+   if($query['expire'] - $now < 0)
+{
+ \R::exec("DELETE FROM forgot WHERE expire < ? ",[$now]);
+ return;
+}
+$password = password_hash($data['new_password'],PASSWORD_DEFAULT);
+\R::exec("UPDATE user SET password  = ? WHERE email = ? ",[$password,$query['email']]);
+    $_SESSION['success'] = "Вы успешно сменили пароль. Теперь можно авторизоваться";
+
+
+
+
+
+
+}
 }
