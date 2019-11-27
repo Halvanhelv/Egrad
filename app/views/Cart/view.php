@@ -85,6 +85,7 @@
 
             <!-- ========================================= SIDEBAR ========================================= -->
 
+            <form method="post" name="buy" action="cart/checkout" role="form" data-toggle="validator">
             <div class="col-xs-12 col-md-3 no-margin sidebar ">
                 <div class="widget cart-summary">
                     <h1 class="border">Корзина</h1>
@@ -106,24 +107,14 @@
                             </li>
                         </ul>
                         <div class="buttons-holder">
-                            <a class="le-button big" href="checkout.html" >checkout</a>
-                            <a class="simple-link block" href="category-grid.html" >continue shopping</a>
+                            <textarea name="note" class="form-control"></textarea>
+                            <a class="le-button big" href="javascript: document.buy.submit();" >Купить</a>
+
                         </div>
                     </div>
                 </div><!-- /.widget -->
+            </form>
 
-                <div id="cupon-widget" class="widget">
-                    <h1 class="border">use coupon</h1>
-                    <div class="body">
-                        <form>
-                            <div class="inline-input">
-                                <input data-placeholder="enter coupon code" type="text" />
-                                <button class="le-button" type="submit">Apply</button>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- /.widget -->
-            </div><!-- /.sidebar -->
 
             <!-- ========================================= SIDEBAR : END ========================================= -->
         </div>

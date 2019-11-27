@@ -5542,3 +5542,149 @@
 =================
 [2019-11-25 19:07:31] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
 =================
+[2019-11-26 07:47:25] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:47:25] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:47:35] Текст ошибки: Контроллер app\controllers\CabinetController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 07:47:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:47:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:56:23] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:56:23] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:56:37] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 07:56:37] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 08:08:47] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 08:08:47] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 08:56:43] Текст ошибки: syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST) | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\UserController.php | Строка: 106
+=================
+[2019-11-26 08:57:35] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 08:57:35] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:29:16] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:29:17] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:29:20] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:29:20] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:52:49] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:52:49] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:52:54] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 14:52:54] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:02:07] Текст ошибки: Метод app\controllers\UserController::recoveryAction не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 33
+=================
+[2019-11-26 15:02:07] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:02:43] Текст ошибки: Метод app\controllers\UserController::recoveryAction не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 33
+=================
+[2019-11-26 15:02:44] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:02:52] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ishop2.users' doesn't exist | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-26 15:02:52] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:11:10] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:11:10] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:18:45] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:18:45] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:21:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:21:38] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:27:11] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:27:11] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:45:31] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:47:42] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 15:48:19] Текст ошибки: Контроллер app\controllers\ForgotController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 15:48:33] Текст ошибки: Контроллер app\controllers\ForgotController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 15:48:35] Текст ошибки: Контроллер app\controllers\ForgotController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 15:48:35] Текст ошибки: Контроллер app\controllers\ForgotController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 15:50:57] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 16:02:16] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 16:02:16] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 18:38:02] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 18:38:03] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 18:38:06] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 18:38:06] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 23:18:23] Текст ошибки: Контроллер app\controllers\PublicController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 23:18:37] Текст ошибки: Контроллер app\controllers\PublicController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 23:18:38] Текст ошибки: Контроллер app\controllers\PublicController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 23:20:37] Текст ошибки: Контроллер app\controllers\PublicController не найден | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 36
+=================
+[2019-11-26 23:21:19] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-26 23:21:19] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 11:52:54] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 11:52:54] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 11:53:04] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 11:53:04] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 11:54:20] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 11:54:28] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:01:43] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:18:10] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') GROUP BY value' at line 1 | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-27 12:33:18] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:33:18] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:35:12] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:35:12] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:36:43] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:36:43] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:37:23] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'currency' cannot be null | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-27 12:38:33] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'currency' cannot be null | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-11-27 12:38:39] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-11-27 12:38:39] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
