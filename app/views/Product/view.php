@@ -399,7 +399,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                                 <div class="ribbon red"><span>sale</span></div>
                                 <div class="image">
                                     <a href="product/<?=$item['alias'];?>">
-                                        <img alt="" src="assets/images/blank.gif" style="max-height: 320px" data-echo="images/<?=$item['img'];?>" />
+                                        <img alt="" src="assets/images/blank.gif" style="max-height: 143px" data-echo="images/<?=$item['img'];?>" />
                                     </a>
                                 </div>
                                 <div class="body">
@@ -458,7 +458,7 @@ $cats = \ishop\App::$app->getProperty('cats');
                                 <div class="ribbon red"><span>sale</span></div>
                                 <div class="image">
                                     <a href="product/<?=$item['alias'];?>">
-                                        <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 320px" data-echo="images/<?=$item['img'];?>" />
+                                        <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px;margin: 0 auto"  data-echo="images/<?=$item['img'];?>" />
                                     </a>
                                 </div>
                                 <div class="body">
