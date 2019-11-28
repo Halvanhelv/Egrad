@@ -19,16 +19,29 @@ abstract class Model{
         foreach($this->attributes as $name => $value){
             if(isset($data[$name])){
                 $this->attributes[$name] = $data[$name];
+
             }
         }
     }
 
-    public function save($table){
-        $tbl = \R::dispense($table);
+    public function save($table, $valid = true){
+        if($valid){
+            $tbl = \R::dispense($table);
+        }else{
+            $tbl = \R::xdispense($table);
+        }
         foreach($this->attributes as $name => $value){
             $tbl->$name = $value;
         }
         return \R::store($tbl);
+    }
+
+    public function update($table, $id){
+        $bean = \R::load($table, $id);
+        foreach($this->attributes as $name => $value){
+            $bean->$name = $value;
+        }
+        return \R::store($bean);
     }
 
     public function validate($data){

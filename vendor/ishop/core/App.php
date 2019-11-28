@@ -9,6 +9,7 @@ class App{
     public function __construct(){
         $query = trim($_SERVER['QUERY_STRING'], '/');
         session_start();
+
         self::$app = Registry::instance();
         $this->getParams();
         new ErrorHandler();

@@ -5,7 +5,7 @@
 
     <?=$this->getMeta();?>
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <base href="/">
     <!-- Bootstrap Core CSS -->
@@ -30,6 +30,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/custom.css">
+
 
 
     <!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
@@ -147,7 +148,7 @@
                             <path d="M404.75 94.4062H441.344V97.5938H404.75V94.4062Z" fill="white"/>
                         </svg>
 
-
+                    </a>
 
 
                 </div><!-- /.logo -->
@@ -651,4 +652,11 @@
         });</script>
 
 </body>
+<?php
+$logs = \R::getDatabaseAdapter()
+    ->getDatabase()
+    ->getLogger();
+
+debug( $logs->grep( 'SELECT' ) );
+?>
 </html>

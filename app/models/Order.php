@@ -66,6 +66,7 @@ class Order extends AppModel {
         unset($_SESSION['cart.sum']);
         unset($_SESSION['cart.currency']);
         $_SESSION['success'] = 'Спасибо за Ваш заказ. В ближайшее время с Вами свяжется менеджер для согласования заказа';
+
     }
 
 }
