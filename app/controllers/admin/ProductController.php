@@ -96,9 +96,6 @@ class ProductController extends AppController {
             $product->attributes['hit'] = $product->attributes['hit'] ? 'on' : 'off';
             $product->attributes['old_price'] = $product->attributes['old_price'] ? $product->attributes['old_price'] : '0';
             $product->attributes['brand_id'] = $product->attributes['brand_id'] ? $product->attributes['brand_id'] : '0';
-
-
-
             $product->getImg();
 
             if(!$product->validate($data)){
@@ -115,7 +112,7 @@ class ProductController extends AppController {
                 \R::store($p);
                 $product->editFilter($id, $data);
                 $product->editRelatedProduct($id, $data);
-    debug($data);
+
                 $product->detail($id,$data);
 
 

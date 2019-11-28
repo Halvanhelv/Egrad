@@ -59,14 +59,23 @@ class Filter  {
 
     protected static function getAttrs(){
         $ids = self::$ids;
-        $data = \R::getAll("SELECT value,attr_group_id,attr_id FROM product JOIN attribute_product ON product.id = attribute_product.product_id JOIN attribute_value ON attribute_product.attr_id = attribute_value.id WHERE category_id IN ($ids) GROUP BY value");
         $attrs = [];
-
-
-        foreach($data as $k => $v){
-            $attrs[$v['attr_group_id']][$v['attr_id']] = $v['value'];
-
+        if(!empty($ids)) {
+            $data = \R::getAll("SELECT `value`,`attr_group_id`,`attr_id` FROM product JOIN attribute_product ON product.id = attribute_product.product_id JOIN attribute_value ON attribute_product.attr_id = attribute_value.id WHERE category_id IN ($ids) GROUP BY `value`  ");
+            foreach ($data as $k => $v) {
+                $attrs[$v['attr_group_id']][$v['attr_id']] = $v['value'];
+            }
         }
+        else
+        {
+            $data = \R::getAssoc('SELECT * FROM attribute_value');
+            foreach($data as $k => $v){
+                $attrs[$v['attr_group_id']][$k] = $v['value'];
+            }
+        }
+
+
+
 
 
         return $attrs;
