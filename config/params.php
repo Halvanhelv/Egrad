@@ -13,5 +13,7 @@ return [
     'img_height' => 320,
     'gallery_width' => 320,
     'gallery_height' => 320,
+    'ik_key' => '',
+    'ik_id' => '',
 
 ];
