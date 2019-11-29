@@ -31,12 +31,12 @@
                             <tbody>
                             <?php foreach($orders as $order): ?>
                                 <?php
-                                if($order['status'] == '1'){
+                                if($order['status'] == 'paid'){
                                     $class = 'success';
-                                    $text = 'Завершен';
-                                }elseif($order['status'] == '2'){
-                                    $class = 'info';
                                     $text = 'Оплачен';
+                                }elseif($order['status'] == 'completion'){
+                                    $class = 'info';
+                                    $text = 'Завершен';
                                 }else{
                                     $class = '';
                                     $text = 'Новый';

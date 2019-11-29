@@ -2,10 +2,10 @@
 <section class="content-header">
     <h1>
         Заказ №<?=$order['id'];?>
-        <?php if($order['status'] != '1'): ?>
-            <a href="<?=ADMIN;?>/order/change?id=<?=$order['id'];?>&status=1" class="btn btn-success btn-xs">Одобрить</a>
+        <?php if($order['status'] != 'new'): ?>
+            <a href="<?=ADMIN;?>/order/change?id=<?=$order['id'];?>&status=сompletion" class="btn btn-success btn-xs">Одобрить</a>
         <?php else: ?>
-            <a href="<?=ADMIN;?>/order/change?id=<?=$order['id'];?>&status=0" class="btn btn-default btn-xs">Вернуть на доработку</a>
+            <a href="<?=ADMIN;?>/order/change?id=<?=$order['id'];?>&status=new" class="btn btn-default btn-xs">Вернуть на доработку</a>
         <?php endif; ?>
         <a href="<?=ADMIN;?>/order/delete?id=<?=$order['id'];?>" class="btn btn-danger btn-xs delete">Удалить</a>
     </h1>
@@ -54,9 +54,9 @@
                                 <td>
                                     <?//=$order['status'] ? 'Завершен' : 'Новый';?>
                                     <?php
-                                    if($order['status'] == '1'){
+                                    if($order['status'] == 'сompletion'){
                                         echo 'Завершен';
-                                    }elseif($order['status'] == '2'){
+                                    }elseif($order['status'] == 'paid'){
                                         echo 'Оплачен';
                                     }else{
                                         echo 'Новый';

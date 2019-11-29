@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\Cart;
 use app\models\Order;
 use app\models\User;
+use ishop\App;
 
 class CartController extends AppController {
 
@@ -19,7 +20,7 @@ class CartController extends AppController {
                 return false;
             }
             if($mod_id){
-                $mod = \R::findOne('modification', 'id = ? AND product_id = ?', [$mod_id, $id]);    
+                $mod = \R::findOne('modification', 'id = ? AND product_id = ?', [$mod_id, $id]);
             }
         }
         $cart = new Cart();
@@ -84,6 +85,7 @@ class CartController extends AppController {
             $user_email = isset($_SESSION['user']['email']) ? $_SESSION['user']['email'] : $_POST['email'];
             $order = new Order();
             $order_id =  $order->saveOrder($data);
+
             if(!empty($_POST['pay'])){
                 self::setPaymentData($order_id);
             }
@@ -104,13 +106,14 @@ class CartController extends AppController {
         $_SESSION['payment']['sum'] = $_SESSION['cart.sum'];
     }
 
+
     public function paymentAction(){
+
         if(empty($_POST)){
             die;
         }
 
         $dataSet = $_POST;
-
         unset($dataSet['ik_sign']);
         ksort($dataSet, SORT_STRING);
         array_push($dataSet, App::$app->getProperty('ik_key'));
@@ -120,11 +123,11 @@ class CartController extends AppController {
         $order = \R::load('order', (int)$dataSet['ik_pm_no']);
         if(!$order) die;
 
-        if($dataSet['ik_co_id'] != App::$app->getProperty('ik_id') || $dataSet['ik_inv_st'] != 'success' || $dataSet['ik_am'] != $order->sum || $sign != $_POST['ik_sign']){
+        if($dataSet['ik_co_id'] != App::$app->getProperty('ik_id') || $dataSet['ik_am'] != $order->sum || $dataSet['ik_inv_st'] != 'success' || $dataSet['ik_am'] != $order->sum || $sign != $_POST['ik_sign']){
             die;
         }
 
-        $order->status = '2';
+        $order->status = 'paid';
         \R::store($order);
         die;
     }

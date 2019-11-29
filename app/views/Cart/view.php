@@ -108,6 +108,12 @@
                         </ul>
                         <div class="buttons-holder">
                             <textarea name="note" class="form-control"></textarea>
+ </div>
+                        <div class="field-row clearfix">
+                                        <span class="pull-left">
+                                            <label class="content-color"><input type="checkbox" name="pay" id="pay" class="le-checbox auto-width inline"> <span class="bold">Купить онлайн</span></label>
+
+                        </div>
                             <a class="le-button big" href="javascript: document.buy.submit();" >Купить</a>
 
                         </div>
