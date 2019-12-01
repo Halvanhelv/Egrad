@@ -244,7 +244,7 @@
 
             <section id="gaming">
                 <div class="grid-list-products">
-                    <h2 class="section-title">rerer</h2>
+                    <h2 class="section-title">Все товары</h2>
 
                     <div class="control-bar">
 

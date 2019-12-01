@@ -49,7 +49,7 @@
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-margin">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="<?php PATH ?>">Home</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">Change Colors</a>
 
@@ -174,20 +174,7 @@
                                 <label for="search"></label>
                             <input  class="search-field " id="search" name="s" placeholder="Поиск"  />
 
-                            <ul class="categories-filter animate-dropdown" >
-                                <li class="dropdown">
 
-                                    <a class="dropdown-toggle"  data-toggle="dropdown" href="category-grid.html">all categories</a>
-
-                                    <ul class="dropdown-menu" role="menu" >
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">laptops</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">tv & audio</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">gadgets</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">cameras</a></li>
-
-                                    </ul>
-                                </li>
-                            </ul>
 
                                    <a class="search-button" href="javascript: document.search.submit();" ></a>
 

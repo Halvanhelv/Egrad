@@ -3661,7 +3661,7 @@ select.top-drop-menu {
         margin-bottom: 5px;
         display: block !important; }
     header .top-search-holder .search-area .search-button {
-      margin: -51px -3px 0 0;
+      /*margin: -51px -3px 0 0;*/
       border-radius: 0 0 5px 0; }
     header .top-search-holder .search-area .categories-filter {
       border-top: 1px solid #e0e0e0;
