@@ -86,7 +86,7 @@
 
             <!-- ========================================= SIDEBAR ========================================= -->
 
-            <form method="post" name="buy" action="cart/checkout" role="form" data-toggle="validator">
+            <form method="post" name="buy" action="cart/order" role="form" data-toggle="validator">
             <div class="col-xs-12 col-md-3 no-margin sidebar ">
                 <div class="widget cart-summary">
                     <h1 class="border">Корзина</h1>
@@ -115,7 +115,7 @@
                                             <label class="content-color"><input type="checkbox" name="pay" id="pay" class="le-checbox auto-width inline"> <span class="bold">Купить онлайн</span></label>
 
                         </div>
-                            <a class="le-button big" href="javascript: document.buy.submit();" >Купить</a>
+                            <a class="le-button big" href="javascript: document.buy.submit();" >Оформить заказ</a>
 
                         </div>
                     </div>

@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Cart;
+use app\models\Checkout;
 use app\models\Order;
 use app\models\User;
 use ishop\App;
@@ -77,20 +78,23 @@ class CartController extends AppController {
     public function viewAction(){
         $this->setMeta('Корзина');
     }
-
+public function orderAction()
+{
+    $this->setMeta('Оформление заказа');
+}
     public function checkoutAction(){
         if(!empty($_POST)){
-            // регистрация пользователя
+            // регистрация пользователя(неполная)
             if(!User::checkAuth()){
-                $user = new User();
+                $user = new Checkout();
                 $data = $_POST;
+                $data['login'] = $data['name'] . time();
                 $user->load($data);
-                if(!$user->validate($data) || !$user->checkUnique()){
+                if(!$user->validate($data) ){   //|| !$user->checkUnique()
                     $user->getErrors();
                     $_SESSION['form_data'] = $data;
                     redirect();
                 }else{
-                    $user->attributes['password'] = password_hash($user->attributes['password'], PASSWORD_DEFAULT);
                     if(!$user_id = $user->save('user')){
                         $_SESSION['error'] = 'Ошибка!';
                         redirect();

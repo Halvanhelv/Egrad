@@ -6938,3 +6938,31 @@
 =================
 [2019-12-02 19:55:43] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
 =================
+[2019-12-02 20:35:19] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 20:35:19] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 20:39:18] Текст ошибки: syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) | Файл: D:\Documents\OSPanel\domains\govno\app\views\Cart\order.php | Строка: 228
+=================
+[2019-12-02 20:47:52] Текст ошибки: syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) | Файл: D:\Documents\OSPanel\domains\govno\app\views\Cart\order.php | Строка: 110
+=================
+[2019-12-02 21:09:13] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 21:09:13] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 23:05:54] Текст ошибки: Call to undefined method app\models\Checkout::checkUnique() | Файл: D:\Documents\OSPanel\domains\govno\app\controllers\CartController.php | Строка: 92
+=================
+[2019-12-02 23:07:06] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 23:07:06] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 23:08:28] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 23:08:28] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 23:11:29] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'login' | Файл: D:\Documents\OSPanel\domains\govno\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 186
+=================
+[2019-12-02 23:17:18] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
+[2019-12-02 23:17:18] Текст ошибки: Страница не найдена | Файл: D:\Documents\OSPanel\domains\govno\vendor\ishop\core\Router.php | Строка: 39
+=================
