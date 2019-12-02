@@ -9,7 +9,26 @@ use ishop\App;
 
 class CartController extends AppController {
 
+    public function recAction()
+    {
+        $id = !empty($_GET['id']) ? (int)$_GET['id'] : null;
+        $qty = !empty($_GET['qty']) ? (int)$_GET['qty'] : null;
+        if($id) {
+            $product = \R::findOne('product', 'id = ?', [$id]);
+            if (!$product) {
+                return false;
+            }
+            $cart = new Cart();
+            $cart->recToCart($product, $qty);
+            if($this->isAjax()){
+                $this->loadView('cart_modal');
+            }
+            redirect();
+
+        }
+    }
     public function addAction(){
+
         $id = !empty($_GET['id']) ? (int)$_GET['id'] : null;
         $qty = !empty($_GET['qty']) ? (int)$_GET['qty'] : null;
         $mod_id = !empty($_GET['mod']) ? (int)$_GET['mod'] : null;

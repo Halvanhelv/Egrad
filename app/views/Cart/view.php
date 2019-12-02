@@ -45,7 +45,7 @@
             <!-- ========================================= CONTENT ========================================= -->
             <div class="col-xs-12 col-md-9 items-holder no-margin">
 <?php foreach($_SESSION['cart'] as $id => $item): ?>
-                <div class="row no-margin cart-item">
+                <div class="row no-margin cart_reload cart-item">
                     <div class="col-xs-12 col-sm-2 no-margin">
                         <a href="#" class="thumb-holder">
                             <img class="lazy" alt="<?=$item['title'] ?>" style="max-width: 73px; max-height: 73px;" src="images/<?= $item['img'] ?>" />
@@ -60,20 +60,21 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <div class="quantity">
-                            <div class="le-quantity">
-                                <form>
-                                    <a class="minus" href="#reduce"></a>
-                                    <input name="quantity" readonly="readonly" type="text" value="1" />
-                                    <a class="plus" href="#add"></a>
-                                </form>
+                            <div class="quantity ">
+                                <div class="le-quantity">
+                                    <form>
+
+                                        <a class="minus"  href="<?=$id?>"></a>
+                                        <input name="quantity" readonly="readonly" id="<?=$id?>" type="text" value="<?=$item['qty'] ?>" />
+                                        <a class="plus" href="<?=$id?>"></a>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-2 no-margin">
                         <div class="price">
-                            <?=$item['price'] ?> <?= $_SESSION['cart.currency']['symbol_right'] ?> x<?=$item['qty'] ?>
+                            <?=$item['price'] ?> <?= $_SESSION['cart.currency']['symbol_right'] ?>
                         </div>
                         <a class="close-btn" href="/cart/delete/?id=<?=$id ?>"></a>
                     </div>

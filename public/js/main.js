@@ -152,3 +152,23 @@ $(function(){
     });
 
 });
+
+
+$('body').on('click', '.cart_reload', function(e){
+    e.preventDefault();
+    // var id =   $('.le-quantity input').attr('id'),
+    var id =   $(this).find('input').attr('id'),
+        qty =  $(this).find('input').attr('value') ? $(this).find('input').attr('value') : 1;
+    $.ajax({
+        url: '/cart/rec',
+        data: {id: id, qty: qty},
+        type: 'GET',
+        success: function(res){
+            showCart(res);
+
+        },
+        error: function(){
+            alert('Ошибка! Попробуйте позже');
+        }
+    });
+});
