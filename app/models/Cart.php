@@ -31,6 +31,10 @@ class Cart extends AppModel {
         if(!isset($_SESSION['cart.currency'])) {
             $_SESSION['cart.currency'] = App::$app->getProperty('currency');
         }
+        if ($qty < 1)
+        {
+            $qty = 1;
+        }
         $ID = $product->id;
         $title = $product->title;
         $price = $product->price;

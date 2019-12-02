@@ -65,7 +65,7 @@
                                     <form>
 
                                         <a class="minus"  href="<?=$id?>"></a>
-                                        <input name="quantity" readonly="readonly" id="<?=$id?>" type="text" value="<?=$item['qty'] ?>" />
+                                        <input name="quantity"  readonly="readonly" id="<?=$id?>" type="text"  value="<?=$item['qty'] ?>" />
                                         <a class="plus" href="<?=$id?>"></a>
                                     </form>
                                 </div>

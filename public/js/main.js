@@ -159,6 +159,10 @@ $('body').on('click', '.cart_reload', function(e){
     // var id =   $('.le-quantity input').attr('id'),
     var id =   $(this).find('input').attr('id'),
         qty =  $(this).find('input').attr('value') ? $(this).find('input').attr('value') : 1;
+    if (qty < 1)
+    {
+        qty = 1;
+    }
     $.ajax({
         url: '/cart/rec',
         data: {id: id, qty: qty},
@@ -172,3 +176,14 @@ $('body').on('click', '.cart_reload', function(e){
         }
     });
 });
+
+function check(e) {
+    // Любой ваш код, в том числе сообщение об ошибке
+    if (e.value < 1) {
+        e.value = '';
+        alert('Меньше 1')
+    }
+
+    e.value = e.value.replace(/[^0-9.]/g, '');
+    e.value = e.value.replace(/(\..*)\./g, '$1');
+}
