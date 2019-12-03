@@ -89,6 +89,7 @@ class Cart extends AppModel {
         $_SESSION['cart.qty'] -= $qtyMinus;
         $_SESSION['cart.sum'] -= $sumMinus;
         unset($_SESSION['cart'][$id]);
+
     }
 
     public static function recalc($curr){

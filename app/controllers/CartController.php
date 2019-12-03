@@ -58,6 +58,7 @@ class CartController extends AppController {
     public function deleteAction(){
         $id = !empty($_GET['id']) ? $_GET['id'] : null;
         if(isset($_SESSION['cart'][$id])){
+
             $cart = new Cart();
             $cart->deleteItem($id);
         }

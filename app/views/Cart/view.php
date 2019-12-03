@@ -39,13 +39,14 @@
         </div><!-- /#top-mega-nav -->
         <!-- ========================================= BREADCRUMB : END ========================================= -->
     </div>
+
     <?php if(!empty($_SESSION['cart'])):?>
         <section id="cart-page">
         <div class="container">
             <!-- ========================================= CONTENT ========================================= -->
-            <div class="col-xs-12 col-md-9 items-holder no-margin">
+            <div class="col-xs-12 col-md-9 items-holder no-margin ">
 <?php foreach($_SESSION['cart'] as $id => $item): ?>
-                <div class="row no-margin cart_reload cart-item">
+                <div class="row no-margin cart_reload cart-item del-items">
                     <div class="col-xs-12 col-sm-2 no-margin">
                         <a href="#" class="thumb-holder">
                             <img class="lazy" alt="<?=$item['title'] ?>" style="max-width: 73px; max-height: 73px;" src="images/<?= $item['img'] ?>" />
@@ -72,11 +73,11 @@
                             </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-2 no-margin">
+                    <div class="  col-xs-12 col-sm-2 no-margin">
                         <div class="price">
                             <?=$item['price'] ?> <?= $_SESSION['cart.currency']['symbol_right'] ?>
                         </div>
-                        <a class="close-btn" href="/cart/delete/?id=<?=$id ?>"></a>
+                        <a class="close-btn del-item1" data-id="<?=$id;?>" href="/cart/delete/?id=<?=$id ?>"></a>
                     </div>
                 </div><!-- /.cart-item -->
                     <?php endforeach;?>

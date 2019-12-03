@@ -610,11 +610,11 @@
 <script src="assets/js/buttons.js"></script>
 <script src="assets/js/scripts.js"></script>
 
-<script src="js/main.js"></script>
+
 
 <script src="js/jquery-ui.min.js"></script>
 <script src="assets/js/validator.min.js"></script>
-
+<script src="js/main.js"></script>
 
     <script>
         $( function() {
