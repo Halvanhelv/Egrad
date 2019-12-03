@@ -187,10 +187,12 @@ $('body').on('click', '.cart_reload .le-quantity', function() {
 
 
 
-$('body').on('click', '.del-items .del-item1 ', function(e) {
-   e.preventDefault();
+$('body').on('click', '.del-item1 ', function(e) {
+    e.preventDefault();
+
 
     var id = $(this).data('id');
+    var total = this;
     $.ajax({
         url: '/cart/delete',
         data: {
@@ -199,7 +201,10 @@ $('body').on('click', '.del-items .del-item1 ', function(e) {
         type: 'GET',
         success: function(res) {
             showCart(res);
-           $('.del-items').fadeOut(300);
+            $(total).parents(".del-items").fadeOut(300);
+
+
+
 
 
         },
