@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon5.svg">
     <link rel="stylesheet" href="assets/css/custom.css">
 
 
