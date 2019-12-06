@@ -35,31 +35,30 @@ class Product extends AppModel {
         $detail = \R::getAssoc("SELECT  attribute_id, attr_value FROM product_detail JOIN detail ON product_detail.attribute_id = detail.id WHERE product_detail.product_id = ?", [$id]);
 
         $tmp = [];
+if(!empty($data['detail'])) {
+    foreach ($data['detail'] as $key => $value) {
+        foreach ($data['detail_attrs'] as $k => $v) {
 
-        foreach ($data['detail'] as $key => $value) {
-            foreach ($data['detail_attrs'] as $k => $v)
-            {
-
-                if($key == $k )
-                {
-                    $tmp[$value] = $v;
-                }
+            if ($key == $k) {
+                $tmp[$value] = $v;
             }
+        }
 
-        }
-        $sql_part = '';
-        foreach($tmp as $v => $k){
-            $v = (int)$v;
-            $k =(string)$k;
-            $sql_part .= "($id, $v,'$k'),";
-        }
-        $sql_part = rtrim($sql_part, ',');
-        // если добавляется характеристика товара
-        if(empty($detail) && !empty($data['detail']))
-        {
-            \R::exec("INSERT INTO product_detail (product_id, attribute_id,attr_value) VALUES $sql_part");
-            return;
-        }
+    }
+    $sql_part = '';
+    foreach ($tmp as $v => $k) {
+        $v = (int)$v;
+        $k = (string)$k;
+        $sql_part .= "($id, $v,'$k'),";
+    }
+
+    $sql_part = rtrim($sql_part, ',');
+    // если добавляется характеристика товара
+    if (empty($detail) && !empty($data['detail'])) {
+        \R::exec("INSERT INTO product_detail (product_id, attribute_id,attr_value) VALUES $sql_part");
+        return;
+    }
+}
 
 
         // если менеджер убрал характеристику товара

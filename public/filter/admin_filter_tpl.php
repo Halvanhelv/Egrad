@@ -8,8 +8,10 @@
         </li>
     </ul>
     <div class="tab-content">
-        <?php if(!empty($this->attrs[$group_id])): ?>
+
+
             <?php $i = 1; foreach($this->groups as $group_id => $group_item): ?>
+        <?php if(!empty($this->attrs[$group_id])): ?>
                 <div class="tab-pane<?php if($i == 1) echo ' active' ?>" id="tab_<?= $group_id ?>">
                     <?php foreach($this->attrs[$group_id] as $attr_id => $value): ?>
                         <?php
@@ -24,9 +26,11 @@
                                 <input type="radio" name="attrs[<?= $group_id ?>]" value="<?= $attr_id ?>"<?= $checked ?>> <?= $value ?>
                             </label>
                         </div>
+
                         <?php $i++; endforeach; ?>
                 </div>
+                <?php endif; ?>
             <?php endforeach; ?>
-        <?php endif; ?>
+
     </div>
 </div>

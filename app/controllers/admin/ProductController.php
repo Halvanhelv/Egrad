@@ -21,7 +21,16 @@ class ProductController extends AppController {
     }
     public function deleteAction()
     {
-
+          $id = $_GET['id'];
+          if (\R::exec("DELETE FROM product WHERE id = ?",[$id]))
+        {
+            $_SESSION['success'] = 'Товар Удален';
+        }
+        else
+        {
+            $_SESSION['error'] = 'Ошибка';
+        }
+redirect();
     }
 
     public function addImageAction(){

@@ -72,10 +72,12 @@ $cats = \ishop\App::$app->getProperty('cats');
                     <div class="single-product-gallery-thumbs gallery-thumbs">
 
                         <div id="owl-single-product-thumbnails" class="owl-carousel">
+                            <?php $i = 0; ?>
                             <?php foreach($gallery as $item): ?>
-                                <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="<?php echo $item['id']-1; ?>" href="#slideimages/<?=$item->img;?>">
-                                    <img  src="iassets/images/blank.gif" style="max-height: 36px; width: auto; margin: 0 auto"   data-echo="images/<?=$item->img;?>" />
+                                <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="<?php echo $i; ?>" href="#slideimages/<?=$item->img;?>">
+                                    <img  src="images/<?=$item->img;?>" style="max-height: 36px; width: auto; margin: 0 auto"   data-echo="images/<?=$item->img;?>" />
                                 </a>
+                            <?php $i++ ?>
                             <?php endforeach; ?>
 
 
@@ -119,7 +121,7 @@ $cats = \ishop\App::$app->getProperty('cats');
         <div class="no-margin col-xs-12 col-sm-7 body-holder">
             <div class="body">
                 <div class="star-holder inline"><div class="star" data-score="4"></div></div>
-                <div class="availability"><label>Availability:</label><span class="available">  in stock</span></div>
+                <div class="availability"><label>В наличии:</label><span class="available"> Да</span></div>
 
                 <div class="title"><a href="#"><?=$product->title;?></a></div>
                 <div class="brand">sony</div>

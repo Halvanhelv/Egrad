@@ -1,10 +1,10 @@
 $('.delete').click(function(){
-    var res = confirm('Подтвердите действие');
+    var res = confirm('Подтвердите удаление');
     if(!res) return false;
 });
 
-$('.del-item').on('click', function(){
-    var res = confirm('Подтвердите действие');
+$(document).on('click', '.del-item', function(){
+    var res = confirm('Удалить изображение?');
     if(!res) return false;
     var $this = $(this),
         id = $this.data('id'),
@@ -118,7 +118,7 @@ if(buttonSingle){
                 buttonSingle.closest('.file-upload').find('.overlay').css({'display':'none'});
 
                 response = JSON.parse(response);
-                $('.' + buttonSingle.data('name')).html('<img src="/images/' + response.file + '" style="max-height: 150px;">');
+                $('.' + buttonSingle.data('name')).html('<img src="/images/' + response.file + '" style="max-height: 150px;" class="del-item" >');
             }, 1000);
         }
     });
@@ -142,7 +142,7 @@ if(buttonMulti){
                 buttonMulti.closest('.file-upload').find('.overlay').css({'display':'none'});
 
                 response = JSON.parse(response);
-                $('.' + buttonMulti.data('name')).append('<img src="/images/' + response.file + '" style="max-height: 150px;">');
+                $('.' + buttonMulti.data('name')).append('<img src="/images/' + response.file + '" style="max-height: 150px;" class="del-item">');
             }, 1000);
         }
     });
@@ -195,4 +195,4 @@ $(document).ready(function () {
             }});
     })
 
-})
+});

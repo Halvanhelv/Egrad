@@ -1,5 +1,5 @@
-a:2:{s:4:"data";s:2546:"<li class="dropdown menu-item">
-                    <a href="category/mensss" class=" dropdown-toggle" data-toggle="">Mensss</a>
+a:2:{s:4:"data";s:651:"<li class="dropdown menu-item">
+                    <a href="category/smartfony" class=" dropdown-toggle" data-toggle="">Смартфоны</a>
             <ul class="dropdown-menu mega-menu">
             <li class="yamm-content">
                 <div class="row">
@@ -7,64 +7,10 @@ a:2:{s:4:"data";s:2546:"<li class="dropdown menu-item">
 <div class="col-md-4">
     <ul class="list-unstyled">
         <li style="font-weight: bold">
-            <a href="category/elektronnye">Электронные</a>
+            <a href="category/apple">Apple</a>
         </li>
                     <li>
-    <a href="category/casio">Casio</a>
-</li><li>
-    <a href="category/citizen">Citizen</a>
-</li>        </div>
-
-<div class="col-md-4">
-    <ul class="list-unstyled">
-        <li style="font-weight: bold">
-            <a href="category/mehanicheskie">Механические</a>
-        </li>
-                    <li>
-    <a href="category/royal-london">Royal London</a>
-</li><li>
-    <a href="category/seiko">Seiko</a>
-</li><li>
-    <a href="category/epos">Epos</a>
-</li>        </div>
-
-<div class="col-md-4">
-    <ul class="list-unstyled">
-        <li style="font-weight: bold">
-            <a href="category/huylo">Хуйло</a>
-        </li>
-        </div>
-                </div>
-            </li>
-        </ul>
-    </li><!-- /.menu-item -->
-
-
-
-
-
-<li class="dropdown menu-item">
-                    <a href="category/women" class=" dropdown-toggle" data-toggle="">Women</a>
-            <ul class="dropdown-menu mega-menu">
-            <li class="yamm-content">
-                <div class="row">
-                    
-<div class="col-md-4">
-    <ul class="list-unstyled">
-        <li style="font-weight: bold">
-            <a href="category/elektronnye-11">Электронные</a>
-        </li>
-                    <li>
-    <a href="category/adriatica">Adriatica</a>
-</li>        </div>
-
-<div class="col-md-4">
-    <ul class="list-unstyled">
-        <li style="font-weight: bold">
-            <a href="category/mehanicheskie-12">Механические</a>
-        </li>
-                    <li>
-    <a href="category/anne-klein">Anne Klein</a>
+    <a href="category/apple-iphone">Apple iPhone</a>
 </li>        </div>
                 </div>
             </li>
@@ -75,20 +21,4 @@ a:2:{s:4:"data";s:2546:"<li class="dropdown menu-item">
 
 
 
-<li class="dropdown menu-item">
-            <a href="category/kids" class=" " data-toggle="">Kids</a>
-    </li><!-- /.menu-item -->
-
-
-
-
-
-<li class="dropdown menu-item">
-            <a href="category/luchshaya-kategoriya" class=" " data-toggle="">лучшая категория</a>
-    </li><!-- /.menu-item -->
-
-
-
-
-
-";s:8:"end_time";i:1575478114;}
+";s:8:"end_time";i:1575653530;}
