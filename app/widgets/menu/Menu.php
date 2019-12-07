@@ -14,24 +14,30 @@ class Menu{
     protected $tpl;
     public $tpl2;
     public $tpl3;
+    public $tpl4;
+    public $tpl_num;
     protected $container = 'ul';
-    protected $class = 'nav';
     protected $table = 'category';
     protected $cache = 3600;
-    protected $cacheKey = 'ishop_menu';
+    protected $cacheKey;
     protected $attrs = [];
     protected $prepend = '';
 
     public function __construct($options = []){
+
         $this->tpl = __DIR__ . '/menu_tpl/menu.php';
         $this->getOptions($options);
         $this->run();
+
+
     }
 
     protected function getOptions($options){
         foreach($options as $k => $v){
             if(property_exists($this, $k)){
                 $this->$k = $v;
+
+
             }
         }
     }
@@ -45,7 +51,12 @@ class Menu{
                 $this->data = $cats = \R::getAssoc("SELECT * FROM {$this->table}");
             }
             $this->tree = $this->getTree();
-            $this->menuHtml = $this->getMenuHtml($this->tree,$tab='',$tpl='1');
+
+            $this->menuHtml = $this->getMenuHtml($this->tree,$tab='',$this->tpl_num);
+
+
+
+
 
             if($this->cache){
                 $cache->set($this->cacheKey, $this->menuHtml, $this->cache);
@@ -61,7 +72,7 @@ class Menu{
                 $attrs .= " $k='$v' ";
             }
         }
-        echo "<{$this->container} class='{$this->class}' $attrs>";
+        echo "<{$this->container}  $attrs>";
         echo $this->prepend;
         echo $this->menuHtml;
         echo "</{$this->container}>";
@@ -81,6 +92,7 @@ class Menu{
     }
 
     protected function getMenuHtml($tree, $tab = '',$tpl){
+
         $str = '';
         foreach($tree as $id => $category){
             $str .= $this->catToTemplate($category, $tab, $id,$tpl);
@@ -91,19 +103,27 @@ class Menu{
 
 
     protected function catToTemplate($category, $tab, $id,$tpl){
+
         ob_start();
         if($tpl=='1') {
             require $this->tpl;
+
         }
 
         elseif ($tpl=='2')
         {
             require $this->tpl2;
         }
-        else
+        elseif($tpl=='3')
         {
             require $this->tpl3;
         }
+        elseif ($tpl=='4')
+        {
+            require $this->tpl4;
+
+        }
+
         return ob_get_clean();
     }
 

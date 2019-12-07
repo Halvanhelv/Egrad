@@ -3,21 +3,42 @@
         <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
         <div class="col-xs-12 col-sm-4 col-md-3 sidemenu-holder">
             <!-- ================================== TOP NAVIGATION ================================== -->
+
             <div class="side-menu animate-dropdown">
                 <div class="head"><i class="fa fa-list"></i>Категории:</div>
 
-                <nav class="yamm megamenu-horizontal" role="navigation">
+
+
+                <nav class="yamm megamenu-horizontal" role="navigation" id="desc_menu" >
                     <?php new \app\widgets\menu\Menu([
+
                         'tpl' => WWW . '/menu/menu.php',
                         'tpl2' => WWW . '/menu/menu2.php',
                         'tpl3' => WWW . '/menu/menu3.php',
+                        'tpl_num'=>'1',
+                        'cacheKey'=>'ishop',
+                        'attrs' => ['class'=>'nav'],
+                    ]); ?>
+                </nav>
+                <nav class="main-nav" role="navigation" id="mob_menu">
+                    <input id="main-menu-state" type="checkbox" />
+                    <label class="main-menu-btn" for="main-menu-state">
+                        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+                    </label>
+                    <?php new \app\widgets\menu\Menu([
 
-//                        'attrs' => ['role'=>'navigation'],
-
+                        'tpl4' => WWW . '/menu/mobile_menu.php',
+                        'cacheKey'=>'ishop2',
+                        'tpl_num'=>'4',
+                        'attrs' => ['class'=>'sm sm-blue sm-vertical','id'=>'main-menu'],
                     ]); ?>
                 </nav>
 
-            </div><!-- /.side-menu -->
+
+
+            </div>
+
+
             <!-- ================================== TOP NAVIGATION : END ================================== -->
         </div><!-- /.sidemenu-holder -->
 

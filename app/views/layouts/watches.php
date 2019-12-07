@@ -30,6 +30,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon5.ico">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="smartmenus-1.1.0/css/sm-core-css.css">
+    <link rel="stylesheet" href="smartmenus-1.1.0/css/sm-blue/sm-blue.css">
 
 
 
@@ -37,6 +39,7 @@
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
+
     <![endif]-->
 </head>
 
@@ -638,7 +641,48 @@
                     $(this).removeClass('open');
                 });
         });</script>
+<script src="smartmenus-1.1.0/jquery.smartmenus.min.js"></script>
+<script>// SmartMenus init
+    $(function() {
+        $('#main-menu').smartmenus({
+            subMenusSubOffsetX: 1,
+            subMenusSubOffsetY: -8
+        });
+    });
 
+    // SmartMenus mobile menu toggle button
+    $(function() {
+        var $mainMenuState = $('#main-menu-state');
+        if ($mainMenuState.length) {
+            // animate mobile menu
+            $mainMenuState.change(function(e) {
+                var $menu = $('#main-menu');
+                if (this.checked) {
+                    $menu.hide().slideDown(250, function() { $menu.css('display', ''); });
+                } else {
+                    $menu.show().slideUp(250, function() { $menu.css('display', ''); });
+                }
+            });
+            // hide mobile menu beforeunload
+            $(window).bind('beforeunload unload', function() {
+                if ($mainMenuState[0].checked) {
+                    $mainMenuState[0].click();
+                }
+            });
+        }
+    });</script>
+
+<script>
+    if(window.innerWidth <= 768) {
+        var body = (document.getElementById("desc_menu"));
+        body.style.display = 'none';
+    }
+        else if(window.innerWidth >768)
+    {
+        var body = (document.getElementById("mob_menu"));
+        body.style.display = 'none';
+    }
+</script>
 </body>
 <?php
 $logs = \R::getDatabaseAdapter()
