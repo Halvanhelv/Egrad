@@ -20,6 +20,7 @@
                         'container' => 'div',
                         'cache' => 0,
                         'cacheKey' => 'admin_cat',
+                        'tpl_num' =>'1',
                         'class' => 'list-group list-group-root well',
                     ]) ?>
                 </div>

@@ -15,6 +15,7 @@ class Menu{
     public $tpl2;
     public $tpl3;
     public $tpl4;
+
     public $tpl_num;
     protected $container = 'ul';
     protected $table = 'category';
@@ -123,6 +124,7 @@ class Menu{
             require $this->tpl4;
 
         }
+
 
         return ob_get_clean();
     }

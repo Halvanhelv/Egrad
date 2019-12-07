@@ -26,6 +26,7 @@
                             <label for="category_id">Родительская категория</label>
                             <?php new \app\widgets\menu\Menu([
                                 'tpl' => WWW . '/menu/select.php',
+                                'tpl_num'   => '1',
                                 'container' => 'select',
                                 'cache' => 0,
                                 'cacheKey' => 'admin_select',
@@ -33,6 +34,7 @@
                                 'attrs' => [
                                     'name' => 'category_id',
                                     'id' => 'category_id',
+                                    'class' => 'form-control',
                                 ],
                                 'prepend' => '<option>Выберите категорию</option>',
                             ]) ?>

@@ -26,15 +26,18 @@
                                 <label for="parent_id">Родительская категория</label>
                                 <?php new \app\widgets\menu\Menu([
                                     'tpl' => WWW . '/menu/select.php',
+
                                     'container' => 'select',
-                                    'cache' => 0,
-                                    'cacheKey' => 'admin_select',
-                                    'class' => 'form-control',
-                                    'attrs' => [
-                                        'name' => 'parent_id',
-                                        'id' => 'parent_id',
+                                    'cache'     => 0,
+                                    'cacheKey'  => 'admin_select',
+
+                                    'attrs'     => [
+                                        'name'  => 'parent_id',
+                                        'id'    => 'parent_id',
+                                        'class' => 'form-control',
                                     ],
-                                    'prepend' => '<option value="0">Самостоятельная категория</option>',
+                                    'tpl_num'   => '1',
+                                    'prepend'   => '<option value="0">Самостоятельная категория</option>',
                                 ]) ?>
                             </div>
                             <div class="form-group">
