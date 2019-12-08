@@ -3,7 +3,7 @@
     <?php if(isset($category['childs'])): ?>
     <ul>
 
-            <?= $this->getMenuHtml($category['childs'],$tab='',$tpl='4');?>
+            <?= $this->getMenuHtml($category['childs'],$tab='',$tpl='1');?>
 
     </ul>
     <?php endif; ?>

@@ -6,9 +6,6 @@
 
             <div class="side-menu animate-dropdown">
                 <div class="head"><i class="fa fa-list"></i>Категории:</div>
-
-
-
                 <nav class="yamm megamenu-horizontal" role="navigation" id="desc_menu" >
                     <?php new \app\widgets\menu\Menu([
 
@@ -27,9 +24,9 @@
                     </label>
                     <?php new \app\widgets\menu\Menu([
 
-                        'tpl4' => WWW . '/menu/mobile_menu.php',
+                        'tpl' => WWW . '/menu/mobile_menu.php',
                         'cacheKey'=>'ishop2',
-                        'tpl_num'=>'4',
+                        'tpl_num'=>'1',
                         'attrs' => ['class'=>'sm sm-blue sm-vertical','id'=>'main-menu'],
                     ]); ?>
                 </nav>
@@ -272,7 +269,7 @@
                                     <div class="ribbon red"><span>sale</span></div>
                                     <div class="image">
                                         <a href="product/<?=$item['alias'];?>">
-                                            <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px" data-echo="images/<?=$item['img'];?>" />
+                                            <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px; margin: 0 auto" data-echo="images/<?=$item['img'];?>" />
                                         </a>
                                     </div>
                                     <div class="body">

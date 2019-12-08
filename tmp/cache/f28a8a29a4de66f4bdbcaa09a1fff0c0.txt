@@ -1,0 +1,15 @@
+a:2:{s:4:"data";s:284:"<li>
+    <a href="category/smartfony"  >Смартфоны</a>
+        <ul>
+
+            <li>
+    <a href="category/apple"  >Apple</a>
+        <ul>
+
+            <li>
+    <a href="category/apple-iphone"  >Apple iPhone</a>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>";s:8:"end_time";i:1575821928;}

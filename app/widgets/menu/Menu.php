@@ -119,11 +119,7 @@ class Menu{
         {
             require $this->tpl3;
         }
-        elseif ($tpl=='4')
-        {
-            require $this->tpl4;
 
-        }
 
 
         return ob_get_clean();
