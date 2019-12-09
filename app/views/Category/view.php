@@ -276,7 +276,7 @@
                                                     <div class="product-item">
                                                         <div class="ribbon red"><span>Популярно</span></div>
                                                         <div class="image">
-                                                            <a href="product/<?=$product->alias;?>">  <img alt="" src="images/<?=$product->img;?>" style="max-width: 186px; max-height: 246px" data-echo="images/<?=$product->img;?>" /></a>
+                                                            <a href="product/<?=$product->alias;?>">  <img alt="" src="images/<?=$product->img;?>" style=" max-height: 246px;min-height: 246px;" data-echo="images/<?=$product->img;?>" /></a>
                                                         </div>
                                                         <div class="body">
                                                             <div class="label-discount green">-50% sale</div>
