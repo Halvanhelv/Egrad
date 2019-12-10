@@ -24,6 +24,9 @@ class DetailController extends AppController
         $this->set(compact('detail', 'pagination', 'count'));
     }
 
+
+
+
 public function addAction()
 {
     if(!empty($_POST))

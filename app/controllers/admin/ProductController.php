@@ -67,6 +67,7 @@ redirect();
             }
             if($product->update('product', $id)){
                 $product->editFilter($id, $data);
+
                 $product->detail($id,$data);
                 $product->editRelatedProduct($id, $data);
                 $product->saveGallery($id);
@@ -86,6 +87,7 @@ redirect();
         $id = $this->getRequestID();
         $product = \R::load('product', $id);
         App::$app->setProperty('parent_id', $product->category_id);
+        App::$app->setProperty('brand_id', $product->brand_id);
         $filter = \R::getCol('SELECT attr_id FROM attribute_product WHERE product_id = ?', [$id]);
         $related_product = \R::getAll("SELECT related_product.related_id, product.title FROM related_product JOIN product ON product.id = related_product.related_id WHERE related_product.product_id = ?", [$id]);
         $gallery = \R::getCol('SELECT img FROM gallery WHERE product_id = ?', [$id]);
@@ -106,6 +108,7 @@ redirect();
             $product->attributes['old_price'] = $product->attributes['old_price'] ? $product->attributes['old_price'] : '0';
             $product->attributes['brand_id'] = $product->attributes['brand_id'] ? $product->attributes['brand_id'] : '0';
             $product->getImg();
+
 
             if(!$product->validate($data)){
                 $product->getErrors();

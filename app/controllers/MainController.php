@@ -8,7 +8,7 @@ use ishop\Cache;
 class MainController extends AppController {
 
     public function indexAction(){
-        $brands = \R::find('brand', 'LIMIT 3');
+        $brands = \R::find('brand');
         $hits = \R::find('product', "hit = 'on' AND status = 'on' LIMIT 6");
 
         // запись в куки запрошенного товара

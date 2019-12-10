@@ -40,6 +40,22 @@
                             ]) ?>
                         </div>
                         <div class="form-group">
+                            <label for="category_id">Бренд</label>
+                            <?php new \app\widgets\brand\Brand([
+                                'tpl' => WWW . '/brand/brand.php',
+                                'container' => 'select',
+                                'cache' => 0,
+                                'cacheKey' => 'brand_select',
+                                'class' => 'form-control',
+                                'attrs' => [
+                                    'name' => 'brand_id',
+                                    'id' => 'brand_id',
+                                    'class' => 'form-control',
+                                ],
+                                'prepend' => '<option>Выберите бренд</option>',
+                            ]) ?>
+                        </div>
+                        <div class="form-group">
                             <label for="keywords">Ключевые слова</label>
                             <input type="text" name="keywords" class="form-control" id="keywords" placeholder="Ключевые слова" value="<?php isset($_SESSION['form_data']['keywords']) ? h($_SESSION['form_data']['keywords']) : null; ?>">
                         </div>

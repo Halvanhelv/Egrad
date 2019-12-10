@@ -118,6 +118,10 @@ if(!empty($data['detail'])) {
         }
     }
 
+    public function brand($id, $data)
+    {
+
+    }
     public function editFilter($id, $data){
 
         $filter = \R::getCol('SELECT attr_id FROM attribute_product WHERE product_id = ?', [$id]);

@@ -379,6 +379,17 @@
                         <li><a href="<?= ADMIN ?>/filter/attribute">Фильтры</a></li>
                     </ul>
                 </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-filter"></i> <span>Бренды</span>
+                        <span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="<?= ADMIN ?>/brand">Список брендов</a></li>
+                        <li><a href="<?= ADMIN ?>/brand/add">Добавить бренд</a></li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <!-- /.sidebar -->

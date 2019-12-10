@@ -109,7 +109,7 @@
 
 <section id="bestsellers" class="color-bg wow fadeInUp">
     <div class="container">
-        <h1 class="section-title">Best Sellers</h1>
+        <h1 class="section-title">Новинки</h1>
 
         <div class="product-grid-holder medium">
 
@@ -124,14 +124,19 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <a href="product/<?=$hit->alias;?>">   <img alt="" src="assets/images/blank.gif" data-echo="images/<?=$hit->img;?>" /> </a>
+                                    <a href="product/<?=$hit->alias;?>">   <img alt="" style="max-height: 143px; margin: 0 auto;" src="assets/images/blank.gif" data-echo="images/<?=$hit->img;?>" /> </a>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
                                         <a href="product/<?=$hit->alias;?>"><?=$hit->title;?></a>
                                     </div>
-                                    <div class="brand">canon</div>
+                                    <?php foreach ($brands as $brand): ?>
+                                    <?php if ($hit->brand_id == $brand->id): ?>
+                                    <div class="brand"><?=$brand->title ?></div>
+                                        <?php break; ?>
+                                <?php endif; ?>
+                      <?php endforeach; ?>
                                 </div>
                                 <div class="prices">
                                     <div class="price-current text-right"><?=$curr['symbol_left'];?><?=$hit->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
@@ -165,7 +170,7 @@
                             <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
                                 <div class="product-item">
                                     <div class="image">
-                                        <a href="product/<?=$hit->alias;?>"><img alt="" style="max-width: 194px; max-height: 143px"  src="assets/images/blank.gif" data-echo="images/<?=$hit->img;?>" /> </a>
+                                        <a href="product/<?=$hit->alias;?>"><img alt="" style="max-height: 143px; margin: 0 auto;" src="assets/images/blank.gif" data-echo="images/<?=$hit->img;?>" /> </a>
                                     </div>
                                     <div class="body">
                                         <div class="label-discount clear"></div>
@@ -269,7 +274,7 @@
                                     <div class="ribbon red"><span>sale</span></div>
                                     <div class="image">
                                         <a href="product/<?=$item['alias'];?>">
-                                            <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px; margin: 0 auto" data-echo="images/<?=$item['img'];?>" />
+                                            <img alt="product/<?=$item['alias'];?>" src="assets/images/blank.gif" style="max-height: 143px; margin: 0 auto;" data-echo="images/<?=$item['img'];?>" />
                                         </a>
                                     </div>
                                     <div class="body">
