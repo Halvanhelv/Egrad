@@ -47,7 +47,24 @@ class BrandController extends AppController
             }
             redirect();
         }
+
     }
+
+public function deleteAction()
+{
+    $id = $this->getRequestID();
+
+           if ( !$brand = \R::findOne('product',"brand_id = ?",[$id]))
+           {
+               $_SESSION['success'] = 'Бренд удален';
+               redirect();
+
+           }
+    $_SESSION['error'] = 'Удаление невозможно, есть товары с указанным брендом';
+           redirect();
+
+    }
+
 
 
     public function editAction()

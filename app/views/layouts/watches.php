@@ -162,13 +162,15 @@
                                     <img src="assets/images/icon-cart.png" alt="" />
                                 </div>
 
+
                                 <div class="total-price-basket">
                                     <span class="lbl">Корзина:</span>
 
                                    <span class="total_count total-price">
 
                                          <?php if(!empty($_SESSION['cart'])): ?>
-                                         <span class="value session_cart cart_price"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></span>
+                                         <span class="value session_cart cart_price"><?= $_SESSION['cart.currency']['symbol_left'];?> <span id="price_for_js"></span> <?= $_SESSION['cart.currency']['symbol_right'];?></span>
+
                                          <?php else: ?>
                                       <span class="value">Пусто</span>
                                          <?php endif; ?>
@@ -340,10 +342,14 @@
     var path = '<?=PATH;?>',
         course = <?=$curr['value'];?>,
         symboleLeft = '<?=$curr['symbol_left'];?>',
-        symboleRight = '<?=$curr['symbol_right'];?>';
+        symboleRight = '<?=$curr['symbol_right'];?>',
 
 </script>
 
+<script>  var price = "<?=$_SESSION['cart.sum'];?>";
+    var price = price.replace(/(\d{1,3})(?=((\d{3})*([^\d]|$)))/g, " $1 ");
+    document.getElementById('price_for_js').innerHTML = price;
+</script>
 <!-- JavaScripts placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
 <script src="assets/js/jquery-migrate-1.2.1.js"></script>

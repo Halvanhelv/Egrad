@@ -380,7 +380,7 @@
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="#"><i class="fa fa-filter"></i> <span>Бренды</span>
+                    <a href="#"><i class="fa fa-amazon"></i> <span>Бренды</span>
                         <span class="pull-right-container">
 <i class="fa fa-angle-left pull-right"></i>
 </span>
