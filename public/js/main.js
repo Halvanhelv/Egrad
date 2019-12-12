@@ -84,8 +84,12 @@ function showCart(cart) {
 
     $('#main_cart .dropdown-menu').html(cart);
 
+
     if ($('.total_sum').text()) {
         $('.total_count').html($('.top-cart-row .total_sum').text());
+        $('.pull-right').html($('.top-cart-row .total_sum').text());
+        $('.tabled-data .value').html($('.top-cart-row .total_sum').text());
+
     } else {
         $('.total_count').text('Пусто');
     }

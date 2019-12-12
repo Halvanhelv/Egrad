@@ -169,7 +169,7 @@
                                    <span class="total_count total-price">
 
                                          <?php if(!empty($_SESSION['cart'])): ?>
-                                         <span class="value session_cart cart_price"><?= $_SESSION['cart.currency']['symbol_left'];?> <span id="price_for_js"></span> <?= $_SESSION['cart.currency']['symbol_right'];?></span>
+                                         <span class="value session_cart cart_price"><?= $_SESSION['cart.currency']['symbol_left'];?><?=number_format($_SESSION['cart.sum'], 0, ',', ' ');?><?= $_SESSION['cart.currency']['symbol_right'];?></span>
 
                                          <?php else: ?>
                                       <span class="value">Пусто</span>
@@ -177,6 +177,7 @@
                                         </span>
                                 </div>
                             </a>
+
 
                             <ul class="dropdown-menu">
 
@@ -343,6 +344,7 @@
         course = <?=$curr['value'];?>,
         symboleLeft = '<?=$curr['symbol_left'];?>',
         symboleRight = '<?=$curr['symbol_right'];?>',
+        cart_sum = <?= $_SESSION['cart.sum'] ?>,
 
 </script>
 
@@ -439,6 +441,7 @@
         body.style.display = 'none';
     }
 </script>
+
 </body>
 <?php
 $logs = \R::getDatabaseAdapter()
@@ -447,4 +450,5 @@ $logs = \R::getDatabaseAdapter()
 
 debug( $logs->grep( 'SELECT' ) );
 ?>
+
 </html>

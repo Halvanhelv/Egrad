@@ -13,7 +13,7 @@
                     <div class="col-xs-8 col-sm-8 no-margin">
                         <div class="title"><?=$item['title'];?></div>
 
-                        <div class="price"><?=$item['price'] ;?>  <?=$_SESSION['cart.currency']['symbol_right'] ;?> </div>
+                        <div class="price"><?=number_format($item['price'] * $_SESSION['cart.currency']['value'], 0, ',', ' ');?>  <?=$_SESSION['cart.currency']['symbol_right'] ;?> </div>
 
                     </div>
                 </div>
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
 
-                    <p class="le-button inverse total_sum"><?= $_SESSION['cart.currency']['symbol_left'];?> <span id="price_for_js_2"></span> <?= $_SESSION['cart.currency']['symbol_right'];?></p>
+                    <p class="le-button inverse total_sum"><?=$_SESSION['cart.currency']['symbol_left'];?><?=number_format($_SESSION['cart.sum'], 0, ',', ' ');?> <?= $_SESSION['cart.currency']['symbol_right'];?></p>
 
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -58,10 +58,7 @@
         </div>
 
     </li>
-        <script>  var price = "<?=$_SESSION['cart.sum'];?>";
-            var price = price.replace(/(\d{1,3})(?=((\d{3})*([^\d]|$)))/g, " $1 ");
-            document.getElementById('price_for_js_2').innerHTML = price;
-        </script>
+
     <?php endif; ?>
 
 <?php else: ?>

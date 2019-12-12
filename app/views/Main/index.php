@@ -3,7 +3,6 @@
         <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
         <div class="col-xs-12 col-sm-4 col-md-3 sidemenu-holder">
             <!-- ================================== TOP NAVIGATION ================================== -->
-
             <div class="side-menu animate-dropdown">
                 <div class="head"><i class="fa fa-list"></i>Категории:</div>
                 <nav class="yamm megamenu-horizontal" role="navigation" id="desc_menu" >
@@ -139,7 +138,8 @@
                       <?php endforeach; ?>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-current text-right"><?=$curr['symbol_left'];?><?=$hit->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
+                                    <div class="price-current text-right"><?=$curr['symbol_left'];?><?=number_format($hit->price * $curr['value'], 0, ',', ' ');?><?=$curr['symbol_right'];?></div>
+
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">

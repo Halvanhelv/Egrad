@@ -67,7 +67,7 @@
                         <ul id="total-field" class="tabled-data inverse-bold ">
                             <li>
                                 <label>Итого к оплате:</label>
-                                <div class="value">$8434.00</div>
+                                <div class="value"><?= $_SESSION['cart.currency']['symbol_left']?><?=number_format($_SESSION['cart.sum'] * $_SESSION['cart.currency']['value'], 0, ',', ' ');?> <?=$_SESSION['cart.currency']['symbol_right'] ?></div>
                             </li>
                         </ul><!-- /.tabled-data -->
 

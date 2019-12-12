@@ -75,8 +75,9 @@
 
                     <div class="  col-xs-12 col-sm-2 no-margin">
                         <div class="price">
-                            <?=$item['price'] ?> <?= $_SESSION['cart.currency']['symbol_right'] ?>
+                            <?=number_format($item['price'] * $_SESSION['cart.currency']['value'], 0, ',', ' ');?> <?= $_SESSION['cart.currency']['symbol_right'] ?>
                         </div>
+
                         <a class="close-btn del-item1" data-id="<?=$id;?>" href="/cart/delete/?id=<?=$id ?>"></a>
                     </div>
                 </div><!-- /.cart-item -->
@@ -95,7 +96,7 @@
                         <ul class="tabled-data no-border inverse-bold">
                             <li>
                                 <label>cart subtotal</label>
-                                <div class="value pull-right"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . " {$_SESSION['cart.currency']['symbol_right']}" ?></div>
+                                <div class="value pull-right"><?= $_SESSION['cart.currency']['symbol_left']?><?=number_format($_SESSION['cart.sum'] * $_SESSION['cart.currency']['value'], 0, ',', ' ');?> <?=$_SESSION['cart.currency']['symbol_right'] ?></div>
                             </li>
                             <li>
                                 <label>shipping</label>
@@ -105,7 +106,7 @@
                         <ul id="total-price" class="tabled-data inverse-bold no-border">
                             <li>
                                 <label>order total</label>
-                                <div class="value pull-right"><?= $_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . " {$_SESSION['cart.currency']['symbol_right']}" ?></div>
+                                <div class="value pull-right"><?= $_SESSION['cart.currency']['symbol_left']?><?=number_format($_SESSION['cart.sum'] * $_SESSION['cart.currency']['value'], 0, ',', ' ');?> <?=$_SESSION['cart.currency']['symbol_right'] ?></div>
                             </li>
                         </ul>
                         <div class="buttons-holder">

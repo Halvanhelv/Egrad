@@ -288,12 +288,12 @@
                                                         <div class="prices">
 
                                                             <?php if($product->old_price): ?>
-                                                                <div class="price-prev"><?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?><?=$curr['symbol_right'];?></div>
+                                                                <div class="price-prev"><?=$curr['symbol_left'];?><?=number_format($product->old_price * $curr['value'], 0, ',', ' ');?><?=$curr['symbol_right'];?></div>
                                                             <?php else:?>
                                                                 <div class="price-prev"></div>
                                                             <?php endif; ?>
 
-                                                            <div class="price-current pull-right"><?=$curr['symbol_left'];?><?=$product->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
+                                                                <div class="price-current pull-right"><?=$curr['symbol_left'];?><?=number_format($product->price * $curr['value'], 0, ',', ' ');?><?=$curr['symbol_right'];?></div>
                                                         </div>
                                                         <div class="hover-area">
                                                             <div class="add-cart-button">

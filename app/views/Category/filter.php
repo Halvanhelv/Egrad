@@ -26,7 +26,7 @@
                                     <div class="price-prev"></div>
                                 <?php endif; ?>
 
-                                <div class="price-current pull-right"><?=$curr['symbol_left'];?><?=$product->price * $curr['value'];?><?=$curr['symbol_right'];?></div>
+                                <div class="price-current pull-right"><?=$curr['symbol_left'];?><?=$product->price * $curr['value']?><?=$curr['symbol_right'];?></div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
