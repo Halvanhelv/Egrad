@@ -87,8 +87,8 @@ function showCart(cart) {
 
     if ($('.total_sum').text()) {
         $('.total_count').html($('.top-cart-row .total_sum').text());
-        $('.pull-right').html($('.top-cart-row .total_sum').text());
-        $('.tabled-data .value').html($('.top-cart-row .total_sum').text());
+        $('.total_ajax_price').html($('.top-cart-row .total_sum').text());
+        $('.tabled-data .total_ajax_price').html($('.top-cart-row .total_sum').text());
 
     } else {
         $('.total_count').text('Пусто');

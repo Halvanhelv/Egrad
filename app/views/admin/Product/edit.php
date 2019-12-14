@@ -35,7 +35,7 @@
                                 'attrs' => [
                                     'name' => 'category_id',
                                     'id' => 'category_id',
-                                    'class' => 'form-control',
+                                    'class' => 'form-control category_id',
                                 ],
                             ]) ?>
                         </div>
@@ -50,7 +50,7 @@
                                 'attrs' => [
                                     'name' => 'brand_id',
                                     'id' => 'brand_id',
-                                    'class' => 'form-control',
+                                    'class' => 'form-control category_id',
                                 ],
                                 'prepend' => '<option>Выберите бренд</option>',
                             ]) ?>
@@ -109,26 +109,34 @@
 
                         <?php new \app\widgets\filter\Filter($filter, WWW . '/filter/admin_filter_tpl.php'); ?>
 
-                            <div class="container-fluid">
-                                <div class="col-md-1  "><button type="button" class=" add_attr btn btn-block btn-success">+</button></div>
-                                <div class="col-md-1 "><button type="button" class="btn btn-block btn-danger">-</button></div>
+                            <div class="container-fluid" style="padding-bottom: 20px">
+                                <div class="col-md-2  "><button type="button" class=" add_attr btn btn-block btn-success">Добавить характеристику</button></div>
+
                             </div>
 
                         <div class="container-fluid attr_block " >
                             <?php if (!empty($detail)): ?>
+
                             <?php foreach ($detail as $item): ?>
+                                    <div class="row">
                             <div class="form-group col-md-6  ">
                                 <label for="detail">Атрибут</label>
                                 <select name="detail[]"   class="form-control select3">
                                     <option value="<?php echo $item['attribute_id'] ?>" selected="selected"><?php echo $item['detail_name'] ?></option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-5">
                                 <label>Значение</label>
                                 <input type="text" name="detail_attrs[]" value="<?php echo $item['attr_value']?>" class="form-control" placeholder="Введите значение ..." autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
 
                             </div>
+                                    <div class="form-group col-md-1  ">
+                                        <label for="detail"></label>
+                                        <button type="button" class="btn btn-block btn-danger delete-attr delete">удалить</button>
+                                    </div>
+                                    </div>
                             <?php endforeach; ?>
+
                             <?php endif;?>
                             </div>
 

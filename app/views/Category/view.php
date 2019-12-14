@@ -286,7 +286,6 @@
                                                             <div class="brand">sony</div>
                                                         </div>
                                                         <div class="prices">
-
                                                             <?php if($product->old_price): ?>
                                                                 <div class="price-prev"><?=$curr['symbol_left'];?><?=number_format($product->old_price * $curr['value'], 0, ',', ' ');?><?=$curr['symbol_right'];?></div>
                                                             <?php else:?>
