@@ -1,4 +1,4 @@
-<div class="animate-dropdown">
+<div class="animate-dropdown cart_view">
         <!-- ========================================= BREADCRUMB ========================================= -->
         <div id="top-mega-nav">
             <div class="container">
@@ -128,7 +128,10 @@
             <!-- ========================================= SIDEBAR : END ========================================= -->
         </div>
     </section>
+<?php else: ?>
+        <div class="container empty_cart" ><img src="images/empty.svg" alt="" style="max-height: 500px;margin: 0 auto;display: block"></div>
     <?php endif;?>
+
     <!-- ============================================================= FOOTER ============================================================= -->
 
     <!-- ============================================================= FOOTER : END ============================================================= -->

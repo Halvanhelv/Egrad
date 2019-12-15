@@ -92,6 +92,19 @@ function showCart(cart) {
 
     } else {
         $('.total_count').text('Пусто');
+        $('#cart-page').remove().fadeOut(100);
+        if(!$('.cart_view').siblings('.empty_cart').length > 0)
+        {
+            console.log(!$('.cart_view').children('.empty_cart').length > 0);
+
+            $('.empty_cart').insertAfter($(".cart_view"));
+            $(".empty_cart").css(
+                {'display': 'block'}
+            ).fadeIn(200);
+
+        }
+
+
     }
     if ($('.total_qty').text()) {
         $('.count').html($('.top-cart-row .total_qty').text());
