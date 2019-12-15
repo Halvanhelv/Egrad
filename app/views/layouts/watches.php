@@ -382,7 +382,7 @@
     
             $( "#search" ).autocomplete({
     
-                source:   "http://govno/search/typeahead",
+                source: "search/typeahead",
                 minLength: 3,
                 select: function( event, ui ) {
                     console.log(ui.id);
