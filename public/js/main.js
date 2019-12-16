@@ -1,16 +1,25 @@
+
+
+
 /* Filters */
 $('body').on('change', '.w_sidebar input', function() {
+    let originalVal = $('.price-slider').data('slider').getValue().join(",")
+    console.log($('.price-slider').data('slider').getValue().join(","));
 
     var checked = $('.w_sidebar input:checked'),
+
         data = '';
     checked.each(function() {
         data += this.value + ',';
+
     });
-    if (data) {
+
+    if (data || originalVal ) {
         $.ajax({
             url: location.href,
             data: {
-                filter: data
+                filter: data,
+                price: originalVal,
             },
             type: 'GET',
             beforeSend: function() {
@@ -23,9 +32,15 @@ $('body').on('change', '.w_sidebar input', function() {
                 $('.preloader').delay(500).fadeOut('slow', function() {
                     $('.product-one').html(res).fadeIn();
                     var url = location.search.replace(/filter(.+?)(&|$)/g, ''); //$2
-                    var newURL = location.pathname + url + (location.search ? "&" : "?") + "filter=" + data;
+                    console.log(url);
+ //одно регулярное выражение для двоих знначений
+                    var url2 = location.search.replace(/price(.+?)(&|$)/g, ''); //$2
+                    console.log(url2);
+                    var newURL = location.pathname + url  + (location.search ? "&" : "?") + "filter=" + data + "&" +  url2  + "price=" + originalVal;
+
                     newURL = newURL.replace('&&', '&');
                     newURL = newURL.replace('?&', '?');
+
                     history.pushState({}, '', newURL);
                 });
             },
@@ -93,9 +108,9 @@ function showCart(cart) {
     } else {
         $('.total_count').text('Пусто');
         $('#cart-page').remove().fadeOut(100);
-        if(!$('.cart_view').siblings('.empty_cart').length > 0)
+        if(!$('.cart_view').siblings('.empty_cart').length > 0 && $(".cart_view").length)
         {
-            console.log(!$('.cart_view').children('.empty_cart').length > 0);
+            console.log(!$('.cart_view').children('.empty_cart').length > 0 );
 
             $('.empty_cart').insertAfter($(".cart_view"));
             $(".empty_cart").css(

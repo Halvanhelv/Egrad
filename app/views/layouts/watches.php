@@ -377,6 +377,24 @@
 <script src="assets/js/validator.min.js"></script>
 <script src="js/main.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/bootstrap-slider.min.js"></script>
+
+
+
+
+
+
     <script>
         $( function() {
     
@@ -386,7 +404,7 @@
                 minLength: 3,
                 select: function( event, ui ) {
                     console.log(ui.id);
-                    window.location =  'http://govno/product/' + encodeURIComponent(ui.item.id);
+                    window.location =  'product/' + encodeURIComponent(ui.item.id);
                 }
             });
         } );

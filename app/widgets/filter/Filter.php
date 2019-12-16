@@ -83,13 +83,24 @@ class Filter  {
 
     public static function getFilter(){
         $filter = null;
+
         if(!empty($_GET['filter'])){
             $filter = preg_replace("#[^\d,]+#", '', $_GET['filter']);
             $filter = trim($filter, ',');
+
+
         }
         return $filter;
     }
+    public static function getPrice(){
 
+        $price = null;
+        if(!empty($_GET['price'])){
+            $price = preg_replace("#[^\d,]+#", '', $_GET['price']);
+            $price = explode(",",$price);
+        }
+        return $price;
+    }
     public static function getCountGroups($filter){
         $filters = explode(',', $filter);
         $cache = Cache::instance();

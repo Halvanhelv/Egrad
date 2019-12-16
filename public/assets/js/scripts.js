@@ -330,9 +330,9 @@
         if ($('.price-slider').length > 0) {
             $('.price-slider').slider({
                 min: 100,
-                max: 700,
+                max: 100000,
                 step: 10,
-                value: [100, 400],
+                value: [100, 100000],
                 handle: "square"
 
             });

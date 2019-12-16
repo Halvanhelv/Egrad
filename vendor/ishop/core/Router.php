@@ -49,6 +49,7 @@ class Router{
                         $route[$k] = $v;
                     }
 
+
                 }
                 if(empty($route['action'])){
                     $route['action'] = 'index';

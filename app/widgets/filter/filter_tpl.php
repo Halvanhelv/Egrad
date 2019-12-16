@@ -1,7 +1,22 @@
 
 <div class="widget">
-    <h1>Product Filters</h1>
 
+    <h1>Product Filters</h1>
+    <div class="price-filter">
+        <h2>Price</h2>
+        <hr>
+        <div class="price-range-holder">
+
+            <input type="text" class="price-slider" value="" >
+
+            <span class="min-max">
+                                            Price: $89 - $2899
+                                        </span>
+            <span class="filter-button">
+                                            <a href="#">Filter</a>
+                                        </span>
+        </div>
+    </div><!-- /.price-filter -->
     <div class="body bordered">
         <?php foreach($this->groups as $group_id => $group_item): ?>
             <?php if(isset($this->attrs[$group_id])): ?>
