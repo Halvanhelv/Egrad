@@ -31,12 +31,11 @@ $('body').on('change', '.w_sidebar input', function() {
 
                 $('.preloader').delay(500).fadeOut('slow', function() {
                     $('.product-one').html(res).fadeIn();
-                    var url = location.search.replace(/filter(.+?)(&|$)/g, ''); //$2
+                    var url = location.search.replace(/filter(.+?)(&|$)price(.+?)(&|$)/g, ''); //$2
                     console.log(url);
  //одно регулярное выражение для двоих знначений
-                    var url2 = location.search.replace(/price(.+?)(&|$)/g, ''); //$2
-                    console.log(url2);
-                    var newURL = location.pathname + url  + (location.search ? "&" : "?") + "filter=" + data + "&" +  url2  + "price=" + originalVal;
+
+                    var newURL = location.pathname + url  + (location.search ? "&" : "?") + "filter=" + data + "&"   + "price=" + originalVal;
 
                     newURL = newURL.replace('&&', '&');
                     newURL = newURL.replace('?&', '?');
