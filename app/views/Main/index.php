@@ -130,12 +130,8 @@
                                     <div class="title">
                                         <a href="product/<?=$hit->alias;?>"><?=$hit->title;?></a>
                                     </div>
-                                    <?php foreach ($brands as $brand): ?>
-                                    <?php if ($hit->brand_id == $brand->id): ?>
-                                    <div class="brand"><?=$brand->title ?></div>
-                                        <?php break; ?>
-                                <?php endif; ?>
-                      <?php endforeach; ?>
+                                    <div class="brand"><?=$hit->brand_title ?></div>
+
                                 </div>
                                 <div class="prices">
                                     <div class="price-current text-right"><?=$curr['symbol_left'];?><?=number_format($hit->price * $curr['value'], 0, ',', ' ');?><?=$curr['symbol_right'];?></div>

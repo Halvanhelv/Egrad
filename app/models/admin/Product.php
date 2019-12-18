@@ -165,6 +165,10 @@ if(!empty($data['detail'])) {
             $this->attributes['img'] = $_SESSION['single'];
             unset($_SESSION['single']);
         }
+        if(!empty($_SESSION['slider'])){
+            $this->attributes['slider_img'] = $_SESSION['slider'];
+            unset($_SESSION['slider']);
+        }
     }
 
     public function saveGallery($id){
@@ -203,9 +207,12 @@ if(!empty($data['detail'])) {
 
             if($name == 'single'){
                 $_SESSION['single'] = $new_name;
-            }else{
+            }elseif($name == 'multi'){
                 $_SESSION['multi'][] = $new_name;
             }
+        elseif($name == 'slider'){
+            $_SESSION['slider'] = $new_name;
+        }
             self::resize($uploadfile, $uploadfile, $wmax, $hmax, $ext);
             $res = array("file" => $new_name);
             exit(json_encode($res));

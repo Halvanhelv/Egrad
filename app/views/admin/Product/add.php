@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-4">
                                 <div class="box box-primary box-solid file-upload">
                                     <div class="box-header">
                                         <h3 class="box-title">Картинки галереи</h3>
@@ -125,6 +125,21 @@
                                         <div id="multi" class="btn btn-success" data-url="product/add-image" data-name="multi">Выбрать файл</div>
                                         <p><small>Рекомендуемые размеры: 700х1000</small></p>
                                         <div class="multi"></div>
+                                    </div>
+                                    <div class="overlay">
+                                        <i class="fa fa-refresh fa-spin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box box-primary box-solid file-upload">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Картинка Слайдера</h3>
+                                    </div>
+                                    <div class="box-body">
+                                        <div id="slider" class="btn btn-success" data-url="product/add-image" data-name="slider">Выбрать файл</div>
+                                        <p><small>Рекомендуемые размеры: 1920х1080</small></p>
+                                        <div class="slider"></div>
                                     </div>
                                     <div class="overlay">
                                         <i class="fa fa-refresh fa-spin"></i>

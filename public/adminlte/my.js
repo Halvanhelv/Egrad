@@ -5,9 +5,42 @@ $('body').on('click', '.delete', function(){
 
 
 
+$(document).on('click', '.del_img', function() {
+    $(this).closest('.file-upload').find('.overlay').css({'display':'block'});
+    $(this).fadeOut();
+    $(this).closest('.file-upload').find('.overlay').css({'display':'none'});
+    var $this = $(this),
+
+        src = $this.data('src');
+    console.log(src);
+    $.ajax({
+        url: adminpath + '/product/delete-gallery',
+        data: {src: src,
+               upload: 1  },
+        type: 'POST',
+        beforeSend: function(){
+            $this.closest('.file-upload').find('.overlay').css({'display':'block'});
+        },
+        success: function(res){
+            console.log(res);
+            setTimeout(function(){
+                $this.closest('.file-upload').find('.overlay').css({'display':'none'});
+                if(res == 1){
+                    $this.fadeOut();
+                }
+            }, 1000);
+        },
+        error: function(){
+            setTimeout(function(){
+                $this.closest('.file-upload').find('.overlay').css({'display':'none'});
+                alert('Ошибка');
+            }, 1000);
+        }
+    });
+});
+
 $(document).on('click', '.del-item', function(){
     var res = confirm('Удалить изображение?');
-    if(!res) return false;
     var $this = $(this),
         id = $this.data('id'),
         src = $this.data('src');
@@ -99,6 +132,7 @@ $(".select3").select2({
 if($('div').is('#single')){
     var buttonSingle = $("#single"),
         buttonMulti = $("#multi"),
+        buttonSlider = $('#slider'),
         file;
 }
 
@@ -120,7 +154,7 @@ if(buttonSingle){
                 buttonSingle.closest('.file-upload').find('.overlay').css({'display':'none'});
 
                 response = JSON.parse(response);
-                $('.' + buttonSingle.data('name')).html('<img src="/images/' + response.file + '" style="max-height: 150px;" class="del-item" >');
+                $('.' + buttonSingle.data('name')).html('<img  data-src = (' + response.file + ') src="/images/' + response.file + '" style="max-height: 150px;" class="d del-item" >');
             }, 1000);
         }
     });
@@ -144,7 +178,30 @@ if(buttonMulti){
                 buttonMulti.closest('.file-upload').find('.overlay').css({'display':'none'});
 
                 response = JSON.parse(response);
-                $('.' + buttonMulti.data('name')).append('<img src="/images/' + response.file + '" style="max-height: 150px;" class="del-item">');
+                $('.' + buttonMulti.data('name')).append('<img  data-src = ' + response.file +'  src="/images/' + response.file + '" style="max-height: 150px;" class="del_img" > ');
+            }, 1000);
+        }
+    });
+}
+if(buttonSlider){
+    new AjaxUpload(buttonSlider, {
+        action: adminpath + buttonSlider.data('url') + "?upload=1",
+        data: {name: buttonSlider.data('name')},
+        name: buttonSlider.data('name'),
+        onSubmit: function(file, ext){
+            if (! (ext && /^(jpg|png|jpeg|gif)$/i.test(ext))){
+                alert('Ошибка! Разрешены только картинки');
+                return false;
+            }
+            buttonSlider.closest('.file-upload').find('.overlay').css({'display':'block'});
+
+        },
+        onComplete: function(file, response){
+            setTimeout(function(){
+                buttonSlider.closest('.file-upload').find('.overlay').css({'display':'none'});
+
+                response = JSON.parse(response);
+                $('.' + buttonSlider.data('name')).html('<img  data-src = (' + response.file + ') src="/images/' + response.file + '" style="max-height: 150px;" class=" del-item" >');
             }, 1000);
         }
     });

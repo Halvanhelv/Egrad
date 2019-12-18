@@ -9,7 +9,8 @@ class MainController extends AppController {
 
     public function indexAction(){
         $brands = \R::find('brand');
-        $hits = \R::find('product', "hit = 'on' AND status = 'on' LIMIT 6");
+        $hits = \R::getAll("SELECT *, brand.img as brand_img, product.img, brand.title as brand_title, product.title,product.alias FROM product JOIN brand ON brand.id = product.brand_id ");
+        $hits =  \R::convertToBeans('product',$hits);
 
         // запись в куки запрошенного товара
         $p_model = new Product();

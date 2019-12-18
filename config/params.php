@@ -11,6 +11,8 @@ return [
     'smtp_password' => 'rqvlknmcobvscwoi',
     'img_width' => 320,
     'img_height' => 320,
+    'slider_width' => 1920,
+    'slider_height' =>1080,
     'gallery_width' => 320,
     'gallery_height' => 320,
     'ik_key' => '8HDmeJS3eIddQpWB',

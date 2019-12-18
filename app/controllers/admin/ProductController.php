@@ -19,10 +19,11 @@ class ProductController extends AppController {
         $this->setMeta('Список товаров');
         $this->set(compact('products', 'pagination', 'count'));
     }
+
     public function deleteAction()
     {
-          $id = $_GET['id'];
-          if (\R::exec("DELETE FROM product WHERE id = ?",[$id]))
+        $id = $_GET['id'];
+        if (\R::exec("DELETE FROM product WHERE id = ?",[$id]))
         {
             $_SESSION['success'] = 'Товар Удален';
         }
@@ -30,7 +31,7 @@ class ProductController extends AppController {
         {
             $_SESSION['error'] = 'Ошибка';
         }
-redirect();
+        redirect();
     }
 
     public function addImageAction(){
@@ -38,13 +39,17 @@ redirect();
             if($_POST['name'] == 'single'){
                 $wmax = App::$app->getProperty('img_width');
                 $hmax = App::$app->getProperty('img_height');
-            }else{
+            }elseif($_POST['name'] == 'multi'){
                 $wmax = App::$app->getProperty('gallery_width');
                 $hmax = App::$app->getProperty('gallery_height');
             }
+            else{
+                $wmax = App::$app->getProperty('slider_width');
+                $hmax = App::$app->getProperty('slider_height');
+            }
             $name = $_POST['name'];
             $product = new Product();
-           $product->uploadImg($name, $wmax, $hmax);
+            $product->uploadImg($name, $wmax, $hmax);
 
 
         }
@@ -131,7 +136,7 @@ redirect();
 
                 $_SESSION['success'] = 'Товар добавлен';
             }
-                redirect();
+            redirect();
         }
 
         $this->setMeta('Новый товар');
@@ -195,6 +200,25 @@ redirect();
     }
 
     public function deleteGalleryAction(){
+
+        if(isset($_POST['upload'])) {
+            $src = isset($_POST['src']) ? $_POST['src'] : null;
+            foreach ($_SESSION['multi'] as $item => $value)
+            {
+                if ($value == $src)
+                {
+
+                    unset($_SESSION['multi'][$item]);
+                    break;
+                }
+            }
+            @unlink(WWW . "/images/$src");
+            exit('1');
+
+        }
+
+
+
         $id = isset($_POST['id']) ? $_POST['id'] : null;
         $src = isset($_POST['src']) ? $_POST['src'] : null;
         if(!$id || !$src){
