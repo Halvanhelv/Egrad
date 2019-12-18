@@ -8,8 +8,9 @@ use ishop\Cache;
 class MainController extends AppController {
 
     public function indexAction(){
-        $brands = \R::find('brand');
-        $hits = \R::getAll("SELECT *, brand.img as brand_img, product.img, brand.title as brand_title, product.title,product.alias FROM product JOIN brand ON brand.id = product.brand_id ");
+        $brands = \R::getAll("SELECT id, alias, slider_img, slider_text FROM product WHERE slider = 'on' ");
+        $brands =  \R::convertToBeans('product', $brands);
+        $hits = \R::getAll("SELECT *, brand.img as brand_img, product.img, brand.title as brand_title, product.title,product.alias, product.id FROM product JOIN brand ON brand.id = product.brand_id LIMIT 6 ");
         $hits =  \R::convertToBeans('product',$hits);
 
         // запись в куки запрошенного товара

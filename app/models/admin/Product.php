@@ -18,6 +18,8 @@ class Product extends AppModel {
         'hit' => '',
         'alias' => '',
         'brand_id' =>'',
+        'slider_text' =>'',
+        'slider' =>'',
     ];
 
     public $rules = [

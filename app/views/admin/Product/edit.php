@@ -83,19 +83,26 @@
                             <label for="content">Контент</label>
                             <textarea name="content" id="editor1" cols="80" rows="10"><?=$product->content;?></textarea>
                         </div>
-
+                        <div class="form-group has-feedback">
+                            <label for="content">Описание для слайдера <span title="Как наберете текст так он и отобразиться(много текста не следует набирать, ограниченно место на каруселе товаров)">(?)</span></label>
+                            <textarea name="slider_text" id="editor2" cols="80" rows="10"><?=$product->slider_text;?></textarea>
+                        </div>
                         <div class="form-group">
                             <label>
-                                <input type="checkbox" name="status"<?=$product->status ? ' checked' : null;?>> Статус
+                                <input type="checkbox" name="status"<?=$product->status == "on" ? ' checked' : null;?>> Есть в наличии
                             </label>
                         </div>
 
                         <div class="form-group">
                             <label>
-                                <input type="checkbox" name="hit"<?=$product->hit ? ' checked' : null;?>> Хит
+                                <input type="checkbox" name="hit"<?=$product->hit == "on" ? ' checked' : null;?>> Популярно
                             </label>
                         </div>
-
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="slider" <?=$product->slider == "on" ? ' checked' : null;?>> На слайдер
+                            </label>
+                        </div>
                         <div class="form-group">
                             <label for="related">Связанные товары</label>
                             <select name="related[]" class="form-control select2" id="related" multiple>

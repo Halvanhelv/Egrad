@@ -75,16 +75,25 @@
                         </div>
                         <div class="form-group has-feedback">
                             <label for="content">Контент</label>
-                            <textarea name="content" id="editor1" cols="80" rows="10"><?php isset($_SESSION['form_data']['old_price']) ? $_SESSION['form_data']['old_price'] : null; ?></textarea>
+                            <textarea name="content" id="editor1" cols="80" rows="10"><?php isset($_SESSION['form_data']['content']) ? $_SESSION['form_data']['old_price'] : null; ?></textarea>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label for="content">Описание для слайдера <span title="Как наберете текст так он и отобразиться(много текста не следует набирать, ограниченно место на каруселе товаров)">(?)</span></label>
+                            <textarea name="slider_text" id="editor2" cols="80" rows="10"><?php isset($_SESSION['form_data']['slider_text']) ? $_SESSION['form_data']['old_price'] : null; ?></textarea>
                         </div>
                         <div class="form-group">
                             <label>
-                                <input type="checkbox" name="status" checked> Статус
+                                <input type="checkbox" name="status" checked> Есть в наличии
                             </label>
                         </div>
                         <div class="form-group">
                             <label>
-                                <input type="checkbox" name="hit"> Хит
+                                <input type="checkbox" name="hit"> Популярно
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="slider"> На слайдер
                             </label>
                         </div>
                         <div class="form-group">
